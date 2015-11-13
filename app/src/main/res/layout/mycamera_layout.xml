@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="255dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="67dp"
+        android:layout_below="@+id/camera_preview">
+        <Button android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/camera_cancel"
+            android:visibility="invisible"
+            android:text="重新拍照"/>
+        <Button android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/camera_capture"
+            android:text="拍照"/>
+        <Button android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/camera_ok"
+            android:visibility="invisible"
+            android:text="开始识别"/>
+    </LinearLayout>
+    <include
+        layout="@layout/advertise"/>
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/p_textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_12"
+            android:text="虹膜采集成功"/>
+        <ImageView
+            android:id="@+id/p_imageview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/circle"
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/p_imageview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        android:layout_below="@+id/p_textview1"
+        android:layout_marginLeft="241dp"
+        android:layout_marginTop="-8dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/p_textview2"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/p_textview1">
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_12"
+
+            android:text="系统认证中"/>
+        <ImageView
+            android:id="@+id/p_imageview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/circle"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/p_imageview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        android:layout_below="@+id/p_textview2"
+        android:layout_marginLeft="241dp"
+        android:layout_marginTop="-8dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/p_textview3"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/p_textview2">
+
+        <TextView
+
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_12"
+            android:text="等待养老金发放"/>
+        <ImageView
+            android:id="@+id/p_imageview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/circle"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/p_imageview6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line"
+        android:layout_below="@+id/p_textview3"
+        android:layout_marginLeft="241dp"
+        android:layout_marginTop="-8dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/p_textview4"
+        android:layout_below="@+id/p_textview3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp">
+
+        <TextView
+
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_12"
+            android:text="领取成功"/>
+        <ImageView
+            android:id="@+id/p_imageview7"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/white_circle"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/advertise"/>
+</RelativeLayout>

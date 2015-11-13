@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="姓名："
+            android:textSize="@dimen/font_size_12"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="马伟建"
+            android:id="@+id/userName"
+            android:textSize="@dimen/font_size_12"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="性别："
+            android:textSize="@dimen/font_size_12"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sex"
+            android:text="男"
+            android:textSize="@dimen/font_size_12"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l2"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="年龄："
+            android:textSize="@dimen/font_size_12"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="82"
+            android:textSize="@dimen/font_size_12"
+            android:id="@+id/userAge"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l3"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="身份证号："
+            android:textSize="@dimen/font_size_12"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123456"
+            android:textSize="@dimen/font_size_12"
+            android:id="@+id/userID"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l4"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true">
+            <Button
+                android:id="@+id/quitAccount"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="编辑"
+                android:textSize="@dimen/font_size_12"/>
+
+        </LinearLayout>
+
+    <include
+        layout="@layout/advertise"/>
+</RelativeLayout>

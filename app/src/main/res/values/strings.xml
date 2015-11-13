@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HongMo</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="string">本月养老金将在5个工作日</string>
+</resources>

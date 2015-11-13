@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/startRenzheng"
+            android:text="开始认证"
+            android:textSize="@dimen/font_size_12"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            />
+        <RelativeLayout
+            android:id="@+id/m_linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startRenzheng"
+            android:layout_centerHorizontal="true"
+            >
+
+            <Button
+                android:layout_width="165dp"
+                android:layout_height="80dp"
+                android:id="@+id/record"
+                android:text="验证记录"
+                android:textSize="@dimen/font_size_12"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+            <Button
+                android:layout_alignParentRight="true"
+                android:layout_width="165dp"
+                android:layout_height="80dp"
+                android:id="@+id/personalInfo"
+                android:text="个人信息"
+                android:textSize="@dimen/font_size_12"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/m_linear1"
+            android:layout_centerHorizontal="true"
+            >
+
+            <Button
+                android:layout_width="165dp"
+                android:layout_height="80dp"
+                android:id="@+id/process"
+                android:text="发放进度"
+                android:textSize="@dimen/font_size_12"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+            <Button
+                android:layout_alignParentRight="true"
+                android:layout_width="165dp"
+                android:layout_height="80dp"
+                android:id="@+id/connectDevice"
+                android:text="连接设备"
+                android:textSize="@dimen/font_size_12"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                />
+        </RelativeLayout>
+
+
+    <include
+        layout="@layout/advertise"/>
+
+</RelativeLayout>

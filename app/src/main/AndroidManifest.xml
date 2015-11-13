@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.whx.hongmo" >
+
+    <uses-permission android:name="android.permission.CAMERA">
+    </uses-permission>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+        <activity android:name=".CameraActivity">
+        </activity>
+        <activity android:name=".SuccessLayout">
+        </activity>
+        <activity android:name=".ConnectionFailActivity">
+        </activity>
+        <activity android:name=".PersonalInfoActivity">
+        </activity>
+        <activity android:name=".ConnectionActivity">
+        </activity>
+        <activity android:name=".ProgressActivity">
+        </activity>
+        <activity android:name=".GetSuccessActivity">
+        </activity>
+        <activity android:name=".GetFailedActivity">
+        </activity>
+        <activity android:name=".RecordActivity">
+
+        </activity>
+        <activity android:name=".LaunchActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>
