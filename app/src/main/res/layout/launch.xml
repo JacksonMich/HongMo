@@ -10,7 +10,7 @@
         android:layout_height="150dp"
         android:layout_alignParentBottom="true"
         android:scaleType="fitXY"
-        android:src="@mipmap/logo3"/>
+        android:src="@drawable/logo1"/>
     <ImageView
         android:id="@+id/adImage"
         android:layout_width="fill_parent"
