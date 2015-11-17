@@ -5,17 +5,9 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/logoImage"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_alignParentBottom="true"
-        android:scaleType="fitXY"
-        android:src="@drawable/logo1"/>
-    <ImageView
-        android:id="@+id/adImage"
-        android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/logoImage"
-        android:scaleType="fitXY"/>
-
+        android:id="@+id/imageView"
+        android:src="@drawable/qidongye_all"
+        />
 </RelativeLayout>
