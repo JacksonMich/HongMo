@@ -10,6 +10,7 @@ android:animateFirstView="true"
 android:autoStart="true"
 android:flipInterval="2000"
 android:inAnimation="@android:anim/slide_in_left"
-android:outAnimation="@android:anim/slide_out_right" >
+android:outAnimation="@android:anim/slide_out_right"
+    >
 
 </com.example.whx.hongmo.NotifiableViewFlipper>
