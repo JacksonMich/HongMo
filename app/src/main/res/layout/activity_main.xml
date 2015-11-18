@@ -4,79 +4,110 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:id="@+id/m_R1"
+        android:layout_width="match_parent"
+        android:layout_height="375dp">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:id="@+id/startRenzheng"
             android:text="开始认证"
             android:textSize="@dimen/font_size_12"
-            android:layout_marginTop="40dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:background="@mipmap/yuan4"
+            android:layout_centerInParent="true"
             />
-        <RelativeLayout
-            android:id="@+id/m_linear1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/startRenzheng"
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_below="@+id/m_R1"
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:src="@mipmap/fengexian"
+        android:scaleType="fitXY"/>
+    <RelativeLayout
+        android:id="@+id/m_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/m_R1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"
+        >
+
+        <TextView
+            android:id="@+id/m_line_h"
+            android:layout_width="2px"
+            android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
-            >
-
-            <Button
-                android:layout_width="165dp"
-                android:layout_height="80dp"
-                android:id="@+id/record"
-                android:text="验证记录"
-                android:textSize="@dimen/font_size_12"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
-                />
-            <Button
-                android:layout_alignParentRight="true"
-                android:layout_width="165dp"
-                android:layout_height="80dp"
-                android:id="@+id/personalInfo"
-                android:text="个人信息"
-                android:textSize="@dimen/font_size_12"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
-                />
-        </RelativeLayout>
-
-        <RelativeLayout
+            android:background="#d7d7d7"/>
+        <TextView
+            android:id="@+id/m_line_v"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/m_linear1"
-            android:layout_centerHorizontal="true"
-            >
+            android:layout_height="2px"
+            android:layout_centerVertical="true"
+            android:background="#d7d7d7"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:id="@+id/record"
+            android:text="验证记录"
+            android:textSize="@dimen/font_size_12"
+            android:layout_alignParentLeft="true"
+            android:background="#ffffff"
+            android:drawableLeft="@mipmap/tubiao1"
+            android:paddingLeft="20dp"
+            android:layout_toLeftOf="@+id/m_line_h"
+            android:layout_alignParentTop="true" />
 
-            <Button
-                android:layout_width="165dp"
-                android:layout_height="80dp"
-                android:id="@+id/process"
-                android:text="发放进度"
-                android:textSize="@dimen/font_size_12"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
-                />
-            <Button
-                android:layout_alignParentRight="true"
-                android:layout_width="165dp"
-                android:layout_height="80dp"
-                android:id="@+id/connectDevice"
-                android:text="连接设备"
-                android:textSize="@dimen/font_size_12"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
-                />
-        </RelativeLayout>
+        <Button
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:layout_toRightOf="@+id/m_line_h"
+            android:id="@+id/process"
+            android:text="发放进度"
+            android:textSize="@dimen/font_size_12"
+            android:background="#ffffff"
+            android:drawableLeft="@mipmap/tubiao2"
+            android:paddingLeft="20dp"
+            />
 
+        <Button
+            android:layout_below="@+id/m_line_v"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_toLeftOf="@+id/m_line_h"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/personalInfo"
+            android:text="个人信息"
+            android:textSize="@dimen/font_size_12"
+            android:background="#ffffff"
+            android:drawableLeft="@mipmap/tubiao3"
+            android:paddingLeft="20dp"
+            />
+        <Button
+            android:layout_below="@+id/m_line_v"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_toRightOf="@+id/m_line_h"
+            android:id="@+id/connectDevice"
+            android:text="连接设备"
+            android:textSize="@dimen/font_size_12"
+            android:background="#ffffff"
+            android:drawableLeft="@mipmap/tubiao4"
+            android:paddingLeft="20dp"
+            />
+    </RelativeLayout>
 
+    <ImageView
+        android:layout_below="@+id/m_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:src="@mipmap/fengexian"
+        android:scaleType="fitXY"/>
     <include
         layout="@layout/advertise"/>
 

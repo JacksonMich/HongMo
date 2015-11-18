@@ -24,7 +24,11 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.personal_info);
-        new CustomActionBar(this).setActionBarLayout(R.layout.actionbar);
+
+        CustomActionBar actionBar = new CustomActionBar(this);
+        actionBar.setActionBarLayout(R.layout.actionbar);
+        actionBar.setTitle("个人信息");
+
         sharedInfo = new SharedInfo(this);
 
         initContent();
@@ -42,7 +46,7 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
         quitAccount.setOnClickListener(this);
     }
 
-    private void saveInfo(){
+//    private void saveInfo(){
 //        String userName,userSex,userID,userShebao,phoneNumber;
 //        userName = userNameText.getText().toString();
 //        userSex = userSexText.getText().toString();
@@ -53,7 +57,7 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
 //        SharedInfo sharedInfo = new SharedInfo(this);
 //        sharedInfo.setInfo(userName,userSex,userID,userShebao,phoneNumber);
 //        sharedInfo.setIsUser(true);
-    }
+//    }
     @Override
     public void onClick(View v) {
         switch (v.getId()){

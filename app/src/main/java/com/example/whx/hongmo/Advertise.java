@@ -10,6 +10,8 @@ import android.widget.Toast;
  */
 public class Advertise implements OnFlipListener{
 
+    public static boolean hasAD = false;
+
     private int[] adImages;
     // 轮番广告Flipper
     private NotifiableViewFlipper adViewFlipper;

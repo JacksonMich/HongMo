@@ -17,6 +17,7 @@ public class CustomActionBar {
 
     private Activity context;
     private TextView back;
+    private TextView title;
 
     public CustomActionBar(){
 
@@ -24,6 +25,7 @@ public class CustomActionBar {
     public CustomActionBar(Activity context){
         this.context = context;
     }
+
     public void setActionBarLayout( int layoutId ){
         ActionBar actionBar = context.getActionBar();
         if( null != actionBar ){
@@ -41,6 +43,12 @@ public class CustomActionBar {
                     context.finish();
                 }
             });
+
+            title = (TextView)v.findViewById(R.id.yemian_title);
         }
+    }
+    public void setTitle(String title){
+
+        this.title.setText(title);
     }
 }
