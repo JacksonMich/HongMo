@@ -15,7 +15,11 @@ public class ConnectionFailActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.connetion_failed);
-        new CustomActionBar(this).setActionBarLayout(R.layout.actionbar);
+
+        CustomActionBar actionBar = new CustomActionBar(this);
+        actionBar.setActionBarLayout(R.layout.actionbar);
+        actionBar.setTitle("连接状态");
+
         setAdView();
     }
     private void setAdView(){
