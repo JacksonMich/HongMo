@@ -46,7 +46,7 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
         quitAccount.setOnClickListener(this);
     }
 
-    private void saveInfo(){
+//    private void saveInfo(){
 //        String userName,userSex,userID,userShebao,phoneNumber;
 //        userName = userNameText.getText().toString();
 //        userSex = userSexText.getText().toString();
@@ -57,7 +57,7 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
 //        SharedInfo sharedInfo = new SharedInfo(this);
 //        sharedInfo.setInfo(userName,userSex,userID,userShebao,phoneNumber);
 //        sharedInfo.setIsUser(true);
-    }
+//    }
     @Override
     public void onClick(View v) {
         switch (v.getId()){
