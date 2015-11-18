@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="720px"
+        android:layout_height="1127px"
+        android:id="@+id/advertise"
+        android:src="@drawable/advertise"/>
+    <ImageView
+        android:layout_width="720px"
+        android:layout_height="153px"
+        android:id="@+id/logo"
+        android:src="@drawable/logo1"/>
+</LinearLayout>
