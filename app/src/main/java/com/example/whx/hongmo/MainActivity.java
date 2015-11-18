@@ -21,6 +21,10 @@ public class MainActivity extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        CustomActionBar actionBar = new CustomActionBar(this);
+        actionBar.setActionBarLayout(R.layout.actionbar);
+        actionBar.setTitle("首页");
+
         initContent();
         setAdView();
 

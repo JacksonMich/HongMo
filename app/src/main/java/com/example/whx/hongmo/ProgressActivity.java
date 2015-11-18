@@ -12,7 +12,11 @@ public class ProgressActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.progress);
-        new CustomActionBar(this).setActionBarLayout(R.layout.actionbar);
+
+        CustomActionBar actionBar = new CustomActionBar(this);
+        actionBar.setActionBarLayout(R.layout.actionbar);
+        actionBar.setTitle("采集进度");
+
         setAdView();
     }
     private void setAdView(){

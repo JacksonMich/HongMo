@@ -16,7 +16,11 @@ public class RecordActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.record);
-        new CustomActionBar(this).setActionBarLayout(R.layout.actionbar);
+
+        CustomActionBar actionBar = new CustomActionBar(this);
+        actionBar.setActionBarLayout(R.layout.actionbar);
+        actionBar.setTitle("验证记录");
+
         recordList = (ListView)findViewById(R.id.record_list);
         setAdView();
         setData();

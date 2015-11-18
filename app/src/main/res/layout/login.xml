@@ -3,61 +3,145 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/l_R1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="330dp">
 
-        <EditText
-            android:id="@+id/userNameText"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/shape"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="50dp"
-            android:hint="用户名"
+        <ImageView
+            android:layout_width="370px"
+            android:layout_height="210px"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/logo"
             />
-        <EditText
-            android:id="@+id/userSexText"
+    </RelativeLayout>
+    <ImageView
+        android:layout_below="@+id/l_R1"
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:src="@mipmap/fengexian"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:id="@+id/l_l1"
+        android:layout_below="@+id/l_R1"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/shape"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="20dp"
-            android:hint="性别"
-            />
-        <EditText
-            android:id="@+id/userAgeText"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="姓       名"
+                android:textScaleX="1"
+                android:textSize="30px"/>
+            <EditText
+                android:id="@+id/userNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/shape"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="20dp"
-            android:hint="年龄"
-            />
-        <EditText
-            android:id="@+id/userIdText"
+            android:layout_height="1px"
+            android:src="@mipmap/fengexian1"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l_l2"
+        android:orientation="vertical"
+        android:layout_below="@+id/l_l1"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/shape"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="20dp"
-            android:hint="身份证号"
-            />
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="性       别"
+                android:textSize="30px"/>
+            <EditText
+                android:id="@+id/userSexText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:src="@mipmap/fengexian1"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_l3"
+        android:layout_below="@+id/l_l2"
+        android:orientation="vertical"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="身份证号"
+                android:textSize="30px"
+                />
+            <EditText
+                android:id="@+id/userIdText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:src="@mipmap/fengexian1"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
         <Button
             android:id="@+id/loginBtn"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="50dp"
-            android:text="确认"
-            android:textSize="@dimen/font_size_12"/>
-    </LinearLayout>
+            android:layout_below="@+id/l_l3"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@mipmap/queren"
+            android:textSize="@dimen/font_size_12"
+            android:layout_centerHorizontal="true"/>
+
     <include
         layout="@layout/advertise"/>
 </RelativeLayout>

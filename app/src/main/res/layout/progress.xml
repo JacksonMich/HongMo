@@ -1,127 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/p_textview1"
+    <RelativeLayout
+        android:id="@+id/p_R1"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="45dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="30dp">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/font_size_12"
-            android:text="虹膜采集成功"/>
         <ImageView
             android:id="@+id/p_imageview1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:src="@mipmap/yuan1"
             android:layout_marginLeft="10dp"
-            android:src="@drawable/circle"
             />
-    </LinearLayout>
-
-
-    <ImageView
-        android:id="@+id/p_imageview2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rectangle"
-        android:layout_below="@+id/p_textview1"
-        android:layout_marginLeft="241dp"
-        android:layout_marginTop="-8dp"
-        />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/p_textview2"
-        android:layout_marginTop="70dp"
-        android:layout_marginLeft="30dp"
-        android:layout_below="@+id/p_textview1">
-        <TextView
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/font_size_12"
-
-            android:text="系统认证中"/>
+        <ImageView
+            android:id="@+id/p_imageview2"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:src="@mipmap/xian1"
+            android:layout_below="@+id/p_imageview1"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            />
         <ImageView
             android:id="@+id/p_imageview3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:src="@drawable/circle"/>
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/p_imageview4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/rectangle"
-        android:layout_below="@+id/p_textview2"
-        android:layout_marginLeft="241dp"
-        android:layout_marginTop="-8dp"/>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/p_textview3"
-        android:layout_marginTop="70dp"
-        android:layout_marginLeft="30dp"
-        android:layout_below="@+id/p_textview2">
-
-        <TextView
-
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/font_size_12"
-            android:text="等待养老金发放"/>
+            android:layout_below="@+id/p_imageview2"
+            android:src="@mipmap/yuan1"/>
+        <ImageView
+            android:id="@+id/p_imageview4"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:src="@mipmap/xian1"
+            android:layout_below="@+id/p_imageview3"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"/>
         <ImageView
             android:id="@+id/p_imageview5"
+            android:layout_below="@+id/p_imageview4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/circle"/>
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/p_imageview6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/line"
-        android:layout_below="@+id/p_textview3"
-        android:layout_marginLeft="241dp"
-        android:layout_marginTop="-8dp"/>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/p_textview4"
-        android:layout_below="@+id/p_textview3"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="70dp">
-
-        <TextView
-
-            android:layout_width="190dp"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/font_size_12"
-            android:text="领取成功"/>
+            android:src="@mipmap/yuan2"/>
+        <ImageView
+            android:id="@+id/p_imageview6"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:src="@mipmap/xian2"
+            android:layout_below="@+id/p_imageview5"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"/>
         <ImageView
             android:id="@+id/p_imageview7"
-            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/white_circle"/>
-    </LinearLayout>
+            android:layout_below="@+id/p_imageview6"
+            android:src="@mipmap/yuan3"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/p_R1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/p_l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_12"
+                android:text="虹膜采集成功"/>
+            <TextView
+                android:id="@+id/p_collection_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#a5a5a5"
+                android:textSize="9pt"
+                android:text="2015-11-10 14:35"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/p_l2"
+            android:layout_below="@+id/p_l1"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_12"
+                android:text="系统认证中"/>
+            <TextView
+                android:id="@+id/p_renzheng_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#a5a5a5"
+                android:textSize="9pt"
+                android:text="2015-11-10 14:35"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/p_l3"
+            android:layout_below="@+id/p_l2"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_12"
+                android:text="等待养老金发放"/>
+            <TextView
+                android:id="@+id/p_wait_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#a5a5a5"
+                android:textSize="9pt"
+                android:text="2015-11-10 14:35"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/p_l4"
+            android:layout_below="@+id/p_l3"
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_12"
+                android:text="领取成功"/>
+            <TextView
+                android:id="@+id/p_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#a5a5a5"
+                android:textSize="9pt"
+                android:text="2015-11-10 14:35"/>
+        </LinearLayout>
+
+    </RelativeLayout>
 
     <include
         layout="@layout/advertise"/>

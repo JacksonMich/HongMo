@@ -24,7 +24,11 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.personal_info);
-        new CustomActionBar(this).setActionBarLayout(R.layout.actionbar);
+
+        CustomActionBar actionBar = new CustomActionBar(this);
+        actionBar.setActionBarLayout(R.layout.actionbar);
+        actionBar.setTitle("个人信息");
+
         sharedInfo = new SharedInfo(this);
 
         initContent();
