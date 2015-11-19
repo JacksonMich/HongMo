@@ -1,13 +1,10 @@
 package com.example.whx.hongmo;
 
 import android.app.Activity;
-import android.app.ActivityManager;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 /**
@@ -32,7 +29,7 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
         sharedInfo = new SharedInfo(this);
 
         initContent();
-        setAdView();
+        testAd();
 
     }
 
@@ -79,13 +76,23 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
         }
     }
 
+    private void testAd(){
+
+        int r = (int)(Math.random()*10);
+        if(r%2==0) {
+            setAdView();
+        }else{
+
+        }
+    }
+
     private void quitAccount(){
 
         sharedInfo.setIsUser(false);
     }
     private void setAdView(){
 
-        int[] images = {R.mipmap.ad1,R.mipmap.ad2};
+        int[] images = {R.mipmap.guanggaotu,R.mipmap.guanggaotu};
         viewFlipper = (NotifiableViewFlipper)findViewById(R.id.viewFlipper);
         Advertise advertise = new Advertise(this,viewFlipper);
         advertise.setAdImages(images);

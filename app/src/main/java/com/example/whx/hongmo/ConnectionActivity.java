@@ -1,9 +1,7 @@
 package com.example.whx.hongmo;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 /**
  * Created by ZhuTalan on 2015/11/5.
@@ -20,11 +18,22 @@ public class ConnectionActivity extends Activity{
         actionBar.setActionBarLayout(R.layout.actionbar);
         actionBar.setTitle("连接状态");
 
-        setAdView();
+        testAd();
     }
+
+    private void testAd(){
+
+        int r = (int)(Math.random()*10);
+        if(r%2==0) {
+            setAdView();
+        }else{
+
+        }
+    }
+
     private void setAdView(){
 
-        int[] images = {R.mipmap.ad1,R.mipmap.ad2};
+        int[] images = {R.mipmap.guanggaotu,R.mipmap.guanggaotu};
         viewFlipper = (NotifiableViewFlipper)findViewById(R.id.viewFlipper);
         Advertise advertise = new Advertise(this,viewFlipper);
         advertise.setAdImages(images);

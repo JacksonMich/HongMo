@@ -7,31 +7,27 @@
     <RelativeLayout
         android:id="@+id/p_R1"
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="500px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <ImageView
             android:id="@+id/zhuangtai"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="400px"
+            android:layout_height="200px"
             android:src="@mipmap/eye"
             android:layout_centerInParent="true"/>
-        <TextView
-            android:id="@+id/userName"
-            android:layout_below="@+id/zhuangtai"
-            android:layout_marginTop="10dp"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="吴德江"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/zhuangtai"
-            android:layout_toLeftOf="@+id/zhuangtai"
             android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:id="@+id/relativeLayout4"
+            android:layout_marginLeft="75dp"
+            android:layout_toLeftOf="@+id/zhuangtai"
+            android:layout_toStartOf="@+id/zhuangtai">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -51,7 +47,8 @@
             android:layout_toEndOf="@+id/zhuangtai"
             android:layout_above="@+id/zhuangtai"
             android:layout_toRightOf="@+id/zhuangtai"
-            android:id="@+id/relativeLayout2">
+            android:id="@+id/relativeLayout2"
+            android:layout_marginRight="75dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -70,7 +67,8 @@
             android:layout_alignParentStart="true"
             android:layout_toStartOf="@+id/zhuangtai"
             android:id="@+id/relativeLayout"
-            android:layout_toLeftOf="@+id/zhuangtai">
+            android:layout_toLeftOf="@+id/zhuangtai"
+            android:layout_marginLeft="75dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -87,7 +85,9 @@
             android:layout_alignTop="@+id/relativeLayout"
             android:layout_toEndOf="@+id/relativeLayout"
             android:layout_alignLeft="@+id/relativeLayout2"
-            android:layout_alignStart="@+id/relativeLayout2">
+            android:layout_alignStart="@+id/relativeLayout2"
+            android:id="@+id/relativeLayout3"
+            android:layout_marginRight="75dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -99,203 +99,107 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="440px"
+            android:layout_height="430px"
             android:layout_above="@+id/zhuangtai"
-            android:layout_centerHorizontal="true">
+            android:layout_toLeftOf="@+id/relativeLayout2"
+            android:layout_toRightOf="@+id/relativeLayout4"
+            android:layout_toEndOf="@+id/relativeLayout4">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView8"
-                android:src="@mipmap/fengexian1"
+                android:src="@mipmap/jianbianxian"
                 android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="70px" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/userName"
-            android:layout_centerHorizontal="true">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView9"
-                android:src="@mipmap/fengexian1"
-                android:layout_centerVertical="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/userName"
-            android:layout_toStartOf="@+id/userName"
-            android:layout_marginRight="64dp"
-            android:layout_marginEnd="64dp">
+            android:layout_alignTop="@+id/zhuangtai"
+            android:layout_toStartOf="@+id/zhuangtai"
+            android:layout_toLeftOf="@+id/zhuangtai"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_marginLeft="75dp">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView10"
                 android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true" />
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/jianbianxian1" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/userName"
-            android:layout_toEndOf="@+id/userName"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="50dp">
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignLeft="@+id/relativeLayout2"
+            android:layout_alignStart="@+id/relativeLayout2"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_above="@+id/relativeLayout3"
+            android:layout_marginRight="75dp">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView11"
                 android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/jianbianxian1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/zhuangtai"
+            android:layout_toRightOf="@+id/relativeLayout"
+            android:layout_toLeftOf="@+id/relativeLayout3"
+            android:layout_toStartOf="@+id/relativeLayout3">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView9"
+                android:src="@mipmap/jianbianxian"
+                android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="70px" />
         </RelativeLayout>
 
     </RelativeLayout>
-    <ImageView
-        android:layout_below="@+id/p_R1"
-        android:layout_width="match_parent"
-        android:layout_height="10px"
-        android:src="@mipmap/fengexian"
-        android:scaleType="fitXY"/>
-    <LinearLayout
-        android:id="@+id/p_l1"
-        android:layout_below="@+id/p_R1"
-        android:layout_width="315dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="20dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="性       别"
-                android:textScaleX="1"
-                android:textSize="30px"/>
-            <TextView
-                android:id="@+id/sex"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
-                android:text="男"
-                />
-        </LinearLayout>
-        <ImageView
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:src="@mipmap/fengexian1"
-            android:scaleType="fitXY"/>
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/p_l2"
-        android:orientation="vertical"
-        android:layout_below="@+id/p_l1"
-        android:layout_width="315dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="10dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="年       龄"
-                android:textSize="30px"/>
-            <TextView
-                android:id="@+id/userAge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:text="78"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
-                />
-        </LinearLayout>
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_marginTop="5dp"
-            android:src="@mipmap/fengexian1"
-            android:scaleType="fitXY"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/p_l3"
-        android:layout_below="@+id/p_l2"
-        android:orientation="vertical"
-        android:layout_width="315dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="10dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="身份证号"
-                android:textSize="30px"
-                />
-            <TextView
-                android:id="@+id/userID"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
-                android:text="12345678" />
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:src="@mipmap/fengexian1"
-            android:layout_marginTop="5dp"
-            android:scaleType="fitXY"/>
-    </LinearLayout>
 
     <Button
         android:id="@+id/quitAccount"
-        android:layout_below="@+id/p_l3"
         android:layout_width="250px"
         android:layout_height="79px"
-        android:layout_marginTop="40px"
+        android:layout_marginTop="220px"
         android:background="@mipmap/anniu_queren"
         android:textSize="@dimen/font_size_12"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/p_R1" />
 
 
     <include
-        layout="@layout/advertise"/>
+        layout="@layout/advertise"
+     />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="吴德江"
+        android:id="@+id/textView"
+        android:layout_below="@+id/p_R1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:textColor="#ff3000" />
 </RelativeLayout>

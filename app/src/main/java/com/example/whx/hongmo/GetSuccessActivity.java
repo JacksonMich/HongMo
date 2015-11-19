@@ -1,11 +1,9 @@
 package com.example.whx.hongmo;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 /**
  * Created by ZhuTalan on 2015/11/11.
@@ -17,16 +15,30 @@ public class GetSuccessActivity extends Activity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.getsuccess_layout);
-        new CustomActionBar(this).setActionBarLayout(R.layout.actionbar);
-        setAdView();
 
-        confirm = (Button)findViewById(R.id.confirm);
+        CustomActionBar actionBar = new CustomActionBar(this);
+        actionBar.setActionBarLayout(R.layout.actionbar);
+        actionBar.setTitle("领取状态");
+
+        testAd();
+
+        confirm = (Button)findViewById(R.id.quitAccount);
         confirm.setOnClickListener(this);
+    }
+
+    private void testAd(){
+
+        int r = (int)(Math.random()*10);
+        if(r%2==0) {
+            setAdView();
+        }else{
+
+        }
     }
 
     private void setAdView(){
 
-        int[] images = {R.mipmap.ad1,R.mipmap.ad2};
+        int[] images = {R.mipmap.guanggaotu,R.mipmap.guanggaotu};
         viewFlipper = (NotifiableViewFlipper)findViewById(R.id.viewFlipper);
         Advertise advertise = new Advertise(this,viewFlipper);
         advertise.setAdImages(images);
@@ -35,7 +47,7 @@ public class GetSuccessActivity extends Activity implements View.OnClickListener
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.confirm:
+            case R.id.quitAccount:
                 finish();
                 break;
         }

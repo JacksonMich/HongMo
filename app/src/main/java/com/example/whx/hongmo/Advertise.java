@@ -18,6 +18,7 @@ public class Advertise implements OnFlipListener{
     // Flipper内的ImageView数组，保留引用，目前没什么用
     private ImageView[] adFlipperImageViews;
     private Context context;
+    public static int HEIGHT = 100;
 
     public Advertise(){
 

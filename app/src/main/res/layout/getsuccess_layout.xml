@@ -13,7 +13,7 @@
             android:id="@+id/zhuangtai"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/linquzhuangtai2"
+            android:src="@mipmap/linquzhuangtai1"
             android:layout_centerInParent="true"/>
     </RelativeLayout>
     <ImageView
@@ -30,8 +30,7 @@
         android:orientation="vertical"
         android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
-        android:layout_toRightOf="@+id/include"
-        android:layout_toEndOf="@+id/include">
+        >
 
         <LinearLayout
             android:layout_width="438dp"

@@ -17,11 +17,22 @@ public class ProgressActivity extends Activity {
         actionBar.setActionBarLayout(R.layout.actionbar);
         actionBar.setTitle("采集进度");
 
-        setAdView();
+        testAd();
     }
+
+    private void testAd(){
+
+        int r = (int)(Math.random()*10);
+        if(r%2==0) {
+            setAdView();
+        }else{
+
+        }
+    }
+
     private void setAdView(){
 
-        int[] images = {R.mipmap.ad1,R.mipmap.ad2};
+        int[] images = {R.mipmap.guanggaotu,R.mipmap.guanggaotu};
         viewFlipper = (NotifiableViewFlipper)findViewById(R.id.viewFlipper);
         Advertise advertise = new Advertise(this,viewFlipper);
         advertise.setAdImages(images);

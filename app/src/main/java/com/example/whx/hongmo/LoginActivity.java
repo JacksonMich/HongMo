@@ -2,10 +2,7 @@ package com.example.whx.hongmo;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -50,7 +47,7 @@ public class LoginActivity extends Activity implements View.OnClickListener{
     }
     private void setAdView(){
 
-        int[] images = {R.mipmap.ad1,R.mipmap.ad2};
+        int[] images = {R.mipmap.guanggaotu,R.mipmap.guanggaotu};
         viewFlipper = (NotifiableViewFlipper)findViewById(R.id.viewFlipper);
         Advertise advertise = new Advertise(this,viewFlipper);
         advertise.setAdImages(images);

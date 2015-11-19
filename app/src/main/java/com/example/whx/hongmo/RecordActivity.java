@@ -22,7 +22,7 @@ public class RecordActivity extends Activity{
         actionBar.setTitle("验证记录");
 
         recordList = (ListView)findViewById(R.id.record_list);
-        setAdView();
+        testAd();
         setData();
     }
     private void setData(){
@@ -30,14 +30,24 @@ public class RecordActivity extends Activity{
         String[] subtitles = {"blablabla","blablabla","blablabla"};
 
         RecordListAdapter adapter = new RecordListAdapter(this);
-        adapter.setTitles(titles,subtitles);
+        adapter.setTitles(titles, subtitles);
 
         recordList.setAdapter(adapter);
     }
 
+    private void testAd(){
+
+        int r = (int)(Math.random()*10);
+        if(r%2==0) {
+            setAdView();
+        }else{
+
+        }
+    }
+
     private void setAdView(){
 
-        int[] images = {R.mipmap.ad1,R.mipmap.ad2};
+        int[] images = {R.mipmap.guanggaotu,R.mipmap.guanggaotu};
         viewFlipper = (NotifiableViewFlipper)findViewById(R.id.viewFlipper);
         Advertise advertise = new Advertise(this,viewFlipper);
         advertise.setAdImages(images);

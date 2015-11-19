@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/Advertise.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/CameraActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/CameraActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/ConnectionActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/ConnectionFailActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/CustomActionBar.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/GetFailedActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/GetFailedActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/GetSuccessActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/GetSuccessActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/LoginActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/MainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/PersonalInfoActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/ProgressActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/RecordActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/whx/hongmo/SuccessLayout.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/getsuccess_layout.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/mycamera_layout.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi" charset="GBK" />
