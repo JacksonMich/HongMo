@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
@@ -16,6 +17,7 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
     private Button quitAccount;
     SharedInfo sharedInfo;
     private NotifiableViewFlipper viewFlipper;
+    private RelativeLayout relativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,9 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
     }
 
     private void initContent(){
+
+        relativeLayout = (RelativeLayout)findViewById(R.id.p_R1);
+
         userNameText = (TextView)findViewById(R.id.userName);
         userSexText = (TextView)findViewById(R.id.sex);
         userIDText = (TextView)findViewById(R.id.userID);
@@ -97,5 +102,19 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
         Advertise advertise = new Advertise(this,viewFlipper);
         advertise.setAdImages(images);
         advertise.addAdFlipperImageViews();
+
+        RelativeLayout.LayoutParams lp=(RelativeLayout.LayoutParams)relativeLayout.getLayoutParams();
+
+        int height  = lp.height;
+
+        height = height - Advertise.HEIGHT;
+
+        lp.height=height;
+
+        relativeLayout.setLayoutParams(lp);
+
+        relativeLayout.setLayoutParams(lp);
+
+        viewFlipper.setVisibility(View.VISIBLE);
     }
 }

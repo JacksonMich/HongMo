@@ -2,6 +2,7 @@ package com.example.whx.hongmo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 /**
@@ -52,5 +53,7 @@ public class RecordActivity extends Activity{
         Advertise advertise = new Advertise(this,viewFlipper);
         advertise.setAdImages(images);
         advertise.addAdFlipperImageViews();
+
+        viewFlipper.setVisibility(View.VISIBLE);
     }
 }

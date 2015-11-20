@@ -43,6 +43,8 @@ public class GetFailedActivity extends Activity implements View.OnClickListener{
         Advertise advertise = new Advertise(this,viewFlipper);
         advertise.setAdImages(images);
         advertise.addAdFlipperImageViews();
+
+        viewFlipper.setVisibility(View.VISIBLE);
     }
     @Override
     public void onClick(View v) {

@@ -35,6 +35,7 @@ public class CameraActivity extends Activity implements View.OnClickListener{
         advertise.setAdImages(images);
         advertise.addAdFlipperImageViews();
 
+        viewFlipper.setVisibility(View.VISIBLE);
     }
     @Override
     public void onClick(View v) {

@@ -2,6 +2,7 @@ package com.example.whx.hongmo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 
 /**
  * Created by ZhuTalan on 2015/11/7.
@@ -37,5 +38,7 @@ public class ProgressActivity extends Activity {
         Advertise advertise = new Advertise(this,viewFlipper);
         advertise.setAdImages(images);
         advertise.addAdFlipperImageViews();
+
+        viewFlipper.setVisibility(View.VISIBLE);
     }
 }
