@@ -82,7 +82,8 @@
             <TextView
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/font_size_12"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/text_size"
                 android:text="虹膜采集成功"/>
             <TextView
                 android:id="@+id/p_collection_time"
@@ -102,7 +103,8 @@
             <TextView
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/font_size_12"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/text_size"
                 android:text="系统认证中"/>
             <TextView
                 android:id="@+id/p_renzheng_time"
@@ -122,7 +124,7 @@
             <TextView
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/font_size_12"
+                android:textSize="@dimen/text_size"
                 android:text="等待养老金发放"/>
             <TextView
                 android:id="@+id/p_wait_time"
@@ -142,7 +144,7 @@
             <TextView
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/font_size_12"
+                android:textSize="@dimen/text_size"
                 android:text="领取成功"/>
             <TextView
                 android:id="@+id/p_time"
