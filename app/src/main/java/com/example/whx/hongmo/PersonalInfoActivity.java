@@ -3,6 +3,7 @@ package com.example.whx.hongmo;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -31,6 +32,7 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
         sharedInfo = new SharedInfo(this);
 
         initContent();
+        setPersonalInfo();
         testAd();
 
     }
@@ -48,6 +50,16 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
         quitAccount.setOnClickListener(this);
     }
 
+    private void setPersonalInfo(){
+        SharedInfo sharedInfo = new SharedInfo(this);
+
+        //Log.d("---------------",sharedInfo.getInfo()[0]);
+
+        userNameText.setText(sharedInfo.getInfo()[0]);
+        userSexText.setText(sharedInfo.getInfo()[1]);
+        userIDText.setText(sharedInfo.getInfo()[2]);
+
+    }
 //    private void saveInfo(){
 //        String userName,userSex,userID,userShebao,phoneNumber;
 //        userName = userNameText.getText().toString();

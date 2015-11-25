@@ -9,20 +9,23 @@ import android.widget.EditText;
 
 public class LoginActivity extends Activity implements View.OnClickListener{
 
-    private NotifiableViewFlipper viewFlipper;
+//    private NotifiableViewFlipper viewFlipper;
     private Button loginBtn;
-    private EditText userID,userName,userSex,userAge;
+    private EditText userID,userName,userSex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        setAdView();
+//        setAdView();
         loginBtn = (Button)findViewById(R.id.loginBtn);
         loginBtn.setOnClickListener(this);
 
         userID = (EditText)findViewById(R.id.userIdText);
+        userName = (EditText)findViewById(R.id.userNameText);
+        userSex = (EditText)findViewById(R.id.userSexText);
+
     }
 
     @Override
@@ -38,21 +41,23 @@ public class LoginActivity extends Activity implements View.OnClickListener{
 
     private boolean loginSuccess(){
         String ID = userID.getText().toString();
+        String name = userName.getText().toString();
+        String sex = userSex.getText().toString();
 
         SharedInfo sharedInfo = new SharedInfo(this);
-        sharedInfo.setInfo(ID);
+        sharedInfo.setInfo(name,sex,ID);
         sharedInfo.setIsUser(true);
 
         return true;
     }
-    private void setAdView(){
-
-        int[] images = {R.mipmap.guanggaotu,R.mipmap.guanggaotu};
-        viewFlipper = (NotifiableViewFlipper)findViewById(R.id.viewFlipper);
-        Advertise advertise = new Advertise(this,viewFlipper);
-        advertise.setAdImages(images);
-        advertise.addAdFlipperImageViews();
-    }
+//    private void setAdView(){
+//
+//        int[] images = {R.mipmap.guanggaotu,R.mipmap.guanggaotu};
+//        viewFlipper = (NotifiableViewFlipper)findViewById(R.id.viewFlipper);
+//        Advertise advertise = new Advertise(this,viewFlipper);
+//        advertise.setAdImages(images);
+//        advertise.addAdFlipperImageViews();
+//    }
 
     @Override
     public void onBackPressed() {

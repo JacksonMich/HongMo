@@ -9,7 +9,7 @@ import android.content.SharedPreferences;
 public class SharedInfo {
 
     private Context context;
-    private String userName,userSex,userId,userSheBao,phoneNumber;
+    private String userName,userSex,userId;
     private boolean isUser;
     SharedPreferences sharedPre;
     SharedPreferences.Editor editor;
@@ -22,8 +22,10 @@ public class SharedInfo {
         sharedPre = context.getSharedPreferences("userInfo",Context.MODE_PRIVATE);
         editor = sharedPre.edit();
     }
-    public void setInfo(String userId){
+    public void setInfo(String userName,String userSex,String userId){
 
+        this.userName = userName;
+        this.userSex = userSex;
         this.userId = userId;
 
         saveInfo();
@@ -32,8 +34,8 @@ public class SharedInfo {
     public void saveInfo(){
 
 
-//        editor.putString("name",userName);
-//        editor.putString("sex",userSex);
+        editor.putString("name",userName);
+        editor.putString("sex",userSex);
         editor.putString("id",userId);
 //        editor.putString("shebao",userSheBao);
 //        editor.putString("phone", phoneNumber);
@@ -52,11 +54,9 @@ public class SharedInfo {
     }
     public String[] getInfo(){
         String[] infos = new String[5];
-        infos[0] = this.userName;
-        infos[1] = this.userSex;
-        infos[2] = this.userId;
-        infos[3] = this.userSheBao;
-        infos[4] = this.phoneNumber;
+        infos[0] = sharedPre.getString("name","");
+        infos[1] = sharedPre.getString("sex","");
+        infos[2] = sharedPre.getString("id","");
 
         return infos;
     }
