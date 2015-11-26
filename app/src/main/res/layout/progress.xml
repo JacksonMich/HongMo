@@ -13,8 +13,8 @@
 
         <ImageView
             android:id="@+id/p_imageview1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@mipmap/yuan1"
             android:layout_marginLeft="10dp"
             />
@@ -30,8 +30,8 @@
             />
         <ImageView
             android:id="@+id/p_imageview3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_marginLeft="10dp"
             android:layout_below="@+id/p_imageview2"
             android:src="@mipmap/yuan1"/>
@@ -47,8 +47,8 @@
         <ImageView
             android:id="@+id/p_imageview5"
             android:layout_below="@+id/p_imageview4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:src="@mipmap/yuan2"/>
         <ImageView
             android:id="@+id/p_imageview6"
@@ -62,13 +62,13 @@
         <ImageView
             android:id="@+id/p_imageview7"
             android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_below="@+id/p_imageview6"
             android:src="@mipmap/yuan3"/>
     </RelativeLayout>
     <RelativeLayout
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="45dp"
         android:layout_toRightOf="@+id/p_R1"
         android:layout_marginLeft="10dp"
         android:layout_width="wrap_content"
@@ -96,7 +96,7 @@
         <LinearLayout
             android:id="@+id/p_l2"
             android:layout_below="@+id/p_l1"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="60dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -117,7 +117,7 @@
         <LinearLayout
             android:id="@+id/p_l3"
             android:layout_below="@+id/p_l2"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="70dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -137,7 +137,7 @@
         <LinearLayout
             android:id="@+id/p_l4"
             android:layout_below="@+id/p_l3"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="75dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">

@@ -39,10 +39,10 @@
             >
 
             <TextView
-                android:layout_width="80dp"
+                android:layout_width="90dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="领 取 金 额:"
+                android:text="领取金额:"
                 android:textScaleX="1"
                 android:textSize="30px"
                 />
