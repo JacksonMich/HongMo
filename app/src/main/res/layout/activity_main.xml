@@ -7,17 +7,22 @@
     <RelativeLayout
         android:id="@+id/m_R1"
         android:layout_width="match_parent"
-        android:layout_height="375dp">
+        android:layout_height="280dp"
+        android:background="#ffffff">
 
         <Button
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/startRenzheng"
             android:text="开始认证"
             android:textSize="@dimen/font_size_12"
             android:textColor="#ffffff"
-            android:background="@mipmap/yuan4"
+            android:background="@mipmap/tubiao5"
             android:layout_centerInParent="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="21dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             />
     </RelativeLayout>
 
@@ -30,7 +35,7 @@
     <RelativeLayout
         android:id="@+id/m_linear1"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="224dp"
         android:layout_below="@+id/m_R1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10px"
@@ -41,65 +46,106 @@
             android:layout_width="2px"
             android:layout_height="match_parent"
             android:layout_centerHorizontal="true"
-            android:background="#d7d7d7"/>
+            android:background="#c1c1c1"/>
         <TextView
             android:id="@+id/m_line_v"
             android:layout_width="match_parent"
             android:layout_height="2px"
             android:layout_centerVertical="true"
-            android:background="#d7d7d7"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="74dp"
-            android:id="@+id/record"
-            android:text="验证记录"
-            android:textSize="@dimen/text_size"
-            android:layout_alignParentLeft="true"
-            android:background="#ffffff"
-            android:drawableLeft="@mipmap/tubiao1"
-            android:paddingLeft="20dp"
-            android:layout_toLeftOf="@+id/m_line_h"
-            android:layout_alignParentTop="true" />
+            android:background="#c1c1c1"/>
 
-        <Button
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="112dp"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/m_line_h"
+            android:id="@+id/record"
+            android:background="#ffffff">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tubiao1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证记录"
+                android:textSize="@dimen/text_size"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
-            android:layout_height="74dp"
+            android:layout_height="112dp"
             android:layout_toRightOf="@+id/m_line_h"
             android:id="@+id/process"
-            android:text="发放进度"
-            android:textSize="@dimen/text_size"
             android:background="#ffffff"
-            android:drawableLeft="@mipmap/tubiao2"
-            android:paddingLeft="20dp"
-            />
+            android:orientation="vertical">
 
-        <Button
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tubiao2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证记录"
+                android:textSize="@dimen/text_size"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_below="@+id/m_line_v"
             android:layout_width="wrap_content"
-            android:layout_height="75dp"
+            android:layout_height="112dp"
             android:layout_toLeftOf="@+id/m_line_h"
             android:layout_alignParentLeft="true"
             android:id="@+id/personalInfo"
-            android:text="个人信息"
-            android:textSize="@dimen/text_size"
             android:background="#ffffff"
-            android:drawableLeft="@mipmap/tubiao3"
-            android:paddingLeft="20dp"
-            />
-        <Button
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tubiao3"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人信息"
+                android:textSize="@dimen/text_size"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_below="@+id/m_line_v"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
-            android:layout_height="75dp"
+            android:layout_height="112dp"
             android:layout_toRightOf="@+id/m_line_h"
             android:id="@+id/connectDevice"
-            android:text="连接设备"
             android:textSize="@dimen/text_size"
             android:background="#ffffff"
-            android:drawableLeft="@mipmap/tubiao4"
-            android:paddingLeft="20dp"
-            />
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tubiao4"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="连接设备"
+                android:textSize="@dimen/text_size"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
     </RelativeLayout>
 
     <ImageView

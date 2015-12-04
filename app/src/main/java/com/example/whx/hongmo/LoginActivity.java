@@ -11,7 +11,7 @@ public class LoginActivity extends Activity implements View.OnClickListener{
 
 //    private NotifiableViewFlipper viewFlipper;
     private Button loginBtn;
-    private EditText userID,userName,userSex;
+    private EditText userID,userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class LoginActivity extends Activity implements View.OnClickListener{
 
         userID = (EditText)findViewById(R.id.userIdText);
         userName = (EditText)findViewById(R.id.userNameText);
-        userSex = (EditText)findViewById(R.id.userSexText);
+//        userSex = (EditText)findViewById(R.id.userSexText);
 
     }
 
@@ -42,10 +42,10 @@ public class LoginActivity extends Activity implements View.OnClickListener{
     private boolean loginSuccess(){
         String ID = userID.getText().toString();
         String name = userName.getText().toString();
-        String sex = userSex.getText().toString();
+//        String sex = userSex.getText().toString();
 
         SharedInfo sharedInfo = new SharedInfo(this);
-        sharedInfo.setInfo(name,sex,ID);
+        sharedInfo.setInfo(name,ID);
         sharedInfo.setIsUser(true);
 
         return true;

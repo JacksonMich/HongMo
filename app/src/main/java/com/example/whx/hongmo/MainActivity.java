@@ -6,6 +6,7 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 /**
@@ -13,12 +14,12 @@ import android.widget.RelativeLayout;
  */
 public class MainActivity extends Activity implements View.OnClickListener{
 
-    private Button startRenzhengBtn,personalInfoBtn,connectBtn,process,recordBtn;
+    private LinearLayout personalInfoBtn,connectBtn,process,recordBtn;
     private NotifiableViewFlipper viewFlipper;
     private MyReceiver receiver;
     private int counterForJustFuckingFun=0;
     private RelativeLayout relativeLayout;
-
+    private Button startRenzhengBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,16 +42,16 @@ public class MainActivity extends Activity implements View.OnClickListener{
         startRenzhengBtn = (Button)findViewById(R.id.startRenzheng);
         startRenzhengBtn.setOnClickListener(this);
 
-        recordBtn = (Button)findViewById(R.id.record);
+        recordBtn = (LinearLayout)findViewById(R.id.record);
         recordBtn.setOnClickListener(this);
 
-        personalInfoBtn = (Button)findViewById(R.id.personalInfo);
+        personalInfoBtn = (LinearLayout)findViewById(R.id.personalInfo);
         personalInfoBtn.setOnClickListener(this);
 
-        connectBtn = (Button)findViewById(R.id.connectDevice);
+        connectBtn = (LinearLayout)findViewById(R.id.connectDevice);
         connectBtn.setOnClickListener(this);
 
-        process = (Button)findViewById(R.id.process);
+        process = (LinearLayout)findViewById(R.id.process);
         process.setOnClickListener(this);
     }
     private void testAd(){
