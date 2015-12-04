@@ -18,18 +18,8 @@ public class ProgressActivity extends Activity {
         actionBar.setActionBarLayout(R.layout.actionbar);
         actionBar.setTitle("采集进度");
 
-        testAd();
     }
 
-    private void testAd(){
-
-        int r = (int)(Math.random()*10);
-        if(r%2==0) {
-            setAdView();
-        }else{
-
-        }
-    }
 
     private void setAdView(){
 

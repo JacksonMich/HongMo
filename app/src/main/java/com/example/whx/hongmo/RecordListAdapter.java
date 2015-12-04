@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class RecordListAdapter extends BaseAdapter{
 
     private Context context;
-    private String[] titles,subtitles;
+    private String[] titles,subtitles,lingquzhuangtai,lingqujine;
 
     public RecordListAdapter(){
 
@@ -44,12 +44,18 @@ public class RecordListAdapter extends BaseAdapter{
         title.setText(titles[position]);
         TextView subtitle = (TextView)view.findViewById(R.id.record_item_subtitle);
         subtitle.setText(subtitles[position]);
+        TextView lingquz = (TextView)view.findViewById(R.id.lingquzhuangtai);
+        lingquz.setText(lingquzhuangtai[position]);
+        TextView lingquj = (TextView)view.findViewById(R.id.lingqujine);
+        lingquj.setText(lingqujine[position]);
 
         return view;
     }
 
-    public void setTitles(String[] titles,String[] subtitles){
+    public void setSource(String[] titles,String[] subtitles,String[] lingquzhuangtai,String[] lingqujine){
 
+        this.lingqujine = lingqujine;
+        this.lingquzhuangtai = lingquzhuangtai;
         this.titles = titles;
         this.subtitles = subtitles;
     }

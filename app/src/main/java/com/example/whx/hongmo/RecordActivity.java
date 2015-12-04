@@ -23,28 +23,20 @@ public class RecordActivity extends Activity{
         actionBar.setTitle("验证记录");
 
         recordList = (ListView)findViewById(R.id.record_list);
-        testAd();
         setData();
     }
     private void setData(){
-        String[] titles = {"第一组数据","第二组数据","第三组数据"};
-        String[] subtitles = {"blablabla","blablabla","blablabla"};
+        String[] titles = {"2015年11月","2015年11月","2015年11月"};
+        String[] subtitles = {"11月10日 10:25","11月10日 10:25","11月10日 10:25"};
+        String[] lingquzhuangtai = {"领取失败","成功","成功","成功"};
+        String[] lingqujine = {"身份信息有误","200元","200元"};
 
         RecordListAdapter adapter = new RecordListAdapter(this);
-        adapter.setTitles(titles, subtitles);
+        adapter.setSource(titles, subtitles,lingquzhuangtai,lingqujine);
 
         recordList.setAdapter(adapter);
     }
 
-    private void testAd(){
-
-        int r = (int)(Math.random()*10);
-        if(r%2==0) {
-            setAdView();
-        }else{
-
-        }
-    }
 
     private void setAdView(){
 

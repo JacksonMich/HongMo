@@ -20,21 +20,11 @@ public class SuccessLayout extends Activity implements View.OnClickListener{
         actionBar.setActionBarLayout(R.layout.actionbar);
         actionBar.setTitle("认证状态");
 
-        testAd();
 
         confirm = (Button)findViewById(R.id.quitAccount);
         confirm.setOnClickListener(this);
     }
 
-    private void testAd(){
-
-        int r = (int)(Math.random()*10);
-        if(r%2==0) {
-            setAdView();
-        }else{
-
-        }
-    }
 
     private void setAdView(){
 

@@ -20,10 +20,6 @@ public class CameraActivity extends Activity implements View.OnClickListener{
         actionBar.setActionBarLayout(R.layout.actionbar);
         actionBar.setTitle("图像显示");
 
-        setAdView();
-
-        confirm = (Button)findViewById(R.id.quitAccount);
-        confirm.setOnClickListener(this);
     }
 
 

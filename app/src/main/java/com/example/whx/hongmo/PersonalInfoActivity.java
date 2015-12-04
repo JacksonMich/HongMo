@@ -3,7 +3,6 @@ package com.example.whx.hongmo;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -33,7 +32,6 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
 
         initContent();
         setPersonalInfo();
-        testAd();
 
     }
 
@@ -93,15 +91,6 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
         }
     }
 
-    private void testAd(){
-
-        int r = (int)(Math.random()*10);
-        if(r%2==0) {
-            setAdView();
-        }else{
-
-        }
-    }
 
     private void quitAccount(){
 

@@ -7,4 +7,6 @@
     <dimen name="text_info_size">60px</dimen>
     <dimen name="fenge_height">65px</dimen>
     <dimen name="content_margin">20dp</dimen>
+    <dimen name="yanzhengjindu_size">36px</dimen>
+    <dimen name="yanzhengjindu_time_size">24px</dimen>
 </resources>

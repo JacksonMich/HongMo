@@ -30,7 +30,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
         actionBar.setTitle("首页");
 
         initContent();
-        testAd();
 
         registerRec();
     }
@@ -54,15 +53,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         process = (LinearLayout)findViewById(R.id.process);
         process.setOnClickListener(this);
     }
-    private void testAd(){
 
-        int r = (int)(Math.random()*10);
-        if(r%2==0) {
-            setAdView();
-        }else{
-
-        }
-    }
     private void setAdView(){
 
         int[] images = {R.mipmap.guanggaotu,R.mipmap.guanggaotu};

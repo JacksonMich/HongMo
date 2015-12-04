@@ -19,22 +19,8 @@ public class GetFailedActivity extends Activity implements View.OnClickListener{
         CustomActionBar actionBar = new CustomActionBar(this);
         actionBar.setActionBarLayout(R.layout.actionbar);
         actionBar.setTitle("领取状态");
-
-        testAd();
-
-        confirm = (Button)findViewById(R.id.quitAccount);
-        confirm.setOnClickListener(this);
     }
 
-    private void testAd(){
-
-        int r = (int)(Math.random()*10);
-        if(r%2==0) {
-            setAdView();
-        }else{
-
-        }
-    }
 
     private void setAdView(){
 

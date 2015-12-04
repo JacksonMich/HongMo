@@ -1,16 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 
     <TextView
         android:id="@+id/record_item_title"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="10pt"/>
-   <TextView
-       android:id="@+id/record_item_subtitle"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:textSize="8pt"/>
-</LinearLayout>
+        android:layout_marginTop="12dp"
+        android:text="2015年11月"
+        android:textSize="32px"/>
+    <TextView
+        android:id="@+id/lingquzhuangtai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/record_item_title"
+        android:text="领取失败"
+        android:textSize="32px"
+        android:textColor="#ff3000"
+        />
+    <TextView
+        android:id="@+id/record_item_subtitle"
+        android:layout_below="@+id/record_item_title"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11月10日 10:25"
+        android:textColor="#a0a0a0"
+        android:textSize="24px"/>
+    <TextView
+        android:id="@+id/lingqujine"
+        android:layout_below="@+id/lingquzhuangtai"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/record_item_subtitle"
+        android:text="200元"
+        android:textSize="24px"
+        android:textColor="#a0a0a0"/>
+</RelativeLayout>
