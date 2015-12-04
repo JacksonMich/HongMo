@@ -7,168 +7,269 @@
     <RelativeLayout
         android:id="@+id/p_R1"
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/zhuangtai"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="214px"
+            android:layout_height="226px"
             android:src="@mipmap/renzheng1"
-            android:layout_centerInParent="true"/>
-        <TextView
-            android:id="@+id/userName"
-            android:layout_below="@+id/zhuangtai"
-            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="吴德江"
-            android:textColor="#ff3000"
-            android:textSize="25dp" />
+            android:layout_marginTop="36px" />
 
-        <TextView
-            android:id="@+id/textView5"
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60px"
             android:layout_below="@+id/zhuangtai"
-            android:layout_marginTop="75dp"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="本月养老金将在5个工作日发送到您的帐户"
-            android:textSize="19dp"
-            android:textIsSelectable="true" />
+            android:background="#32a0a0a0"
+            android:layout_marginTop="50px">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="采集成功，本月养老金将在5个工作日发送到您的帐户"
+                android:textSize="27px"
+                android:textIsSelectable="true"
+                android:textColor="#a0a0a0"
+                android:singleLine="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:layout_marginRight="64px"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15px" />
+        </RelativeLayout>
 
     </RelativeLayout>
-    <ImageView
-        android:layout_below="@+id/p_R1"
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="10px"
-        android:src="@mipmap/fengexian"
-        android:scaleType="fitXY"/>
-
-    <LinearLayout
-        android:id="@+id/p_l1"
+        android:layout_height="match_parent"
         android:layout_below="@+id/p_R1"
-        android:layout_width="315dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="20dp">
+        android:layout_alignLeft="@+id/quitAccount"
+        android:layout_alignStart="@+id/quitAccount">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/p_l1"
+            android:layout_below="@+id/p_R1"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40px">
 
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="性       别"
-                android:textScaleX="1"
-                android:textSize="30px"/>
-            <TextView
-                android:id="@+id/sex"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@null"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
-                android:text="男"
-                />
-        </LinearLayout>
-        <ImageView
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:src="@mipmap/fengexian1"
-            android:scaleType="fitXY"/>
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/p_l2"
-        android:orientation="vertical"
-        android:layout_below="@+id/p_l1"
-        android:layout_width="315dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="10dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                android:orientation="horizontal"
+                android:layout_marginTop="40px"
+                android:layout_marginBottom="23px">
 
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="年       龄"
-                android:textSize="30px"/>
-            <TextView
-                android:id="@+id/userAge"
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="姓       名"
+                    android:textScaleX="1"
+                    android:textSize="30px"
+                    android:textColor="#a0a0a0" />
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="吴宇森"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:text="78"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
-                />
+                android:layout_height="1px"
+                android:src="@mipmap/fengexian1"
+                android:scaleType="fitXY"/>
         </LinearLayout>
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_marginTop="5dp"
-            android:src="@mipmap/fengexian1"
-            android:scaleType="fitXY"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/p_l3"
-        android:layout_below="@+id/p_l2"
-        android:orientation="vertical"
-        android:layout_width="315dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="10dp">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="80dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="身份证号"
-                android:textSize="30px"
-                />
-            <TextView
-                android:id="@+id/userID"
+            android:id="@+id/p_l2"
+            android:orientation="vertical"
+            android:layout_below="@+id/p_l1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40px">
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@null"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
-                android:text="12345678" />
+                android:layout_marginTop="33px"
+                android:layout_marginBottom="23px">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="性       别"
+                    android:textSize="30px"
+                    android:textColor="#a0a0a0" />
+                <TextView
+                    android:id="@+id/userAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="男"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/fengexian1"
+                android:scaleType="fitXY"/>
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:src="@mipmap/fengexian1"
-            android:layout_marginTop="5dp"
-            android:scaleType="fitXY"/>
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/p_l3"
+            android:layout_below="@+id/p_l2"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="40px">
 
-    <Button
-        android:id="@+id/quitAccount"
-        android:layout_below="@+id/p_l3"
-        android:layout_width="250px"
-        android:layout_height="79px"
-        android:layout_marginTop="40px"
-        android:background="@mipmap/anniu_queren"
-        android:textSize="@dimen/font_size_12"
-        android:layout_centerHorizontal="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33px"
+                android:layout_marginBottom="23px">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="年       龄"
+                    android:textSize="30px"
+                    android:textColor="#a0a0a0" />
+                <TextView
+                    android:id="@+id/userID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="18" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:src="@mipmap/fengexian1"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_l3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="40px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33px"
+                android:layout_marginBottom="23px">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="身份证号"
+                    android:textSize="30px"
+                    android:textColor="#a0a0a0" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="12345678" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:src="@mipmap/fengexian1"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/p_l3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="40px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33px"
+                android:layout_marginBottom="23px">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="所  在  地"
+                    android:textSize="30px"
+                    android:textColor="#a0a0a0" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="香港九龙" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:src="@mipmap/fengexian1"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/quitAccount"
+            android:layout_below="@+id/p_l3"
+            android:layout_width="250px"
+            android:layout_height="79px"
+            android:layout_marginTop="43px"
+            android:background="@mipmap/anniu_queren"
+            android:textSize="@dimen/font_size_12"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="255px" />
+    </LinearLayout>
 
 
     <include
         layout="@layout/advertise"/>
+
 </RelativeLayout>

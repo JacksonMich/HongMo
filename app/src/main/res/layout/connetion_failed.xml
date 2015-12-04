@@ -12,37 +12,41 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-        <TextView
-            android:layout_width="720px"
-            android:layout_height="200px"
-            android:layout_alignParentTop="true"
-            android:text="未连接"
-            android:textSize="48px"
-            android:textColor="#000000"
-            android:gravity="center"
-            android:id="@+id/textView2"
-             />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="821px">
+
+            <ImageView
+                android:layout_width="316px"
+                android:layout_height="821px"
+                android:id="@+id/imageView2"
+                android:src="@drawable/chatou"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="202px"
+                android:layout_marginTop="100px"
+                android:layout_marginBottom="100px" />
+        </RelativeLayout>
+
         <ImageView
-            android:layout_width="720px"
-            android:layout_height="570px"
-            android:id="@+id/imageView2"
-            android:src="@drawable/chatou"/>
-        <ImageView
-            android:layout_width="720px"
-            android:layout_height="10px"
+            android:layout_width="fill_parent"
+            android:layout_height="65px"
             android:id="@+id/imageView3"
-            android:src="@drawable/fengexian"/>
+            android:src="@drawable/fengexian"
+            android:scaleType="fitXY" />
+
         <TextView
-            android:layout_width="720px"
-            android:layout_height="255px"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
             android:layout_alignParentTop="true"
             android:text="请长按设备正面按钮进行连接"
-            android:textSize="30px"
+            android:textSize="32px"
             android:textColor="#000000"
             android:gravity="center"
             android:id="@+id/textView3"
             />
     </LinearLayout>
+
     <include
         layout="@layout/advertise"/>
 </RelativeLayout>

@@ -7,77 +7,192 @@
     <RelativeLayout
         android:id="@+id/p_R1"
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/zhuangtai"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/linquzhuangtai1"
-            android:layout_centerInParent="true"/>
+            android:id="@+id/imageView8"
+            android:src="@mipmap/tuan1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="-20dp" />
+
+        <ImageView
+            android:layout_width="192px"
+            android:layout_height="188px"
+            android:id="@+id/imageView9"
+            android:src="@mipmap/touxiang1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="您11月的养老金已领取成功!"
+            android:id="@+id/textView"
+            android:layout_marginTop="30px"
+            android:layout_below="@+id/imageView9"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:textSize="32px"
+            android:layout_marginRight="75px"
+            android:textColor="#ff3000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="吴彦祖"
+            android:id="@+id/textView6"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="32px"
+            android:layout_marginLeft="165px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="领取金额：2500元"
+            android:id="@+id/textView7"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:textSize="24px"
+            android:layout_marginTop="15px"
+            android:textColor="#ff3000"
+            android:layout_marginBottom="28px" />
     </RelativeLayout>
     <ImageView
         android:layout_below="@+id/p_R1"
         android:layout_width="match_parent"
-        android:layout_height="10px"
+        android:layout_height="65px"
         android:src="@mipmap/fengexian"
         android:scaleType="fitXY"/>
+
+
     <LinearLayout
-        android:id="@+id/p_l1"
+        android:id="@+id/linearLayout4"
         android:layout_below="@+id/p_R1"
-        android:layout_width="315dp"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="20dp"
-        >
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="60px">
 
         <LinearLayout
-            android:layout_width="438dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            >
+            android:layout_marginTop="40px"
+            android:weightSum="1">
 
             <TextView
-                android:layout_width="90dp"
+                android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="领取金额:"
+                android:text="2015年11月"
                 android:textScaleX="1"
-                android:textSize="30px"
-                />
+                android:textSize="32px"
+                android:singleLine="true"
+                android:layout_weight="0.38" />
+
             <TextView
-                android:id="@+id/sex"
-                android:layout_width="match_parent"
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
-                android:text="800"
-                android:textColor="#FF3000"
-                android:textSize="56px" />
+                android:text="2500元"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="400px" />
+
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="11月10日 10:25"
+            android:id="@+id/textView9"
+            android:textColor="#a0a0a0"
+            android:layout_marginTop="16px"
+            android:layout_marginBottom="26px" />
+
         <ImageView
             android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="1px"
             android:src="@mipmap/fengexian1"
-            android:scaleType="fitXY"/>
+            android:scaleType="fitXY" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/quitAccount"
-        android:layout_width="250px"
-        android:layout_height="79px"
-        android:layout_marginTop="40px"
-        android:background="@mipmap/anniu_queren"
-        android:textSize="@dimen/font_size_12"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/p_l1"
-        android:allowUndo="true" />
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="40px">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40px"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="2015年10月"
+                android:textScaleX="1"
+                android:textSize="32px"
+                android:singleLine="true"
+                android:layout_weight="0.38" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="2500元"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="400px" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="10月10日 14:25"
+            android:id="@+id/textView11"
+            android:textColor="#a0a0a0"
+            android:layout_marginTop="16px"
+            android:layout_marginBottom="26px" />
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:src="@mipmap/fengexian1"
+            android:scaleType="fitXY" />
+    </LinearLayout>
 
     <include
         layout="@layout/advertise"
         />
+
 </RelativeLayout>
