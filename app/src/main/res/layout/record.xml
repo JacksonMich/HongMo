@@ -7,7 +7,8 @@
         android:id="@+id/r_L1"
         android:layout_width="match_parent"
         android:layout_height="202dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#ffffff">
         <ImageView
             android:id="@+id/touxiang"
             android:layout_width="wrap_content"
@@ -22,7 +23,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_gravity="center_horizontal"
-            android:text="吴德江"/>
+            android:text="吴德江"
+            android:textSize="60px"/>
     </LinearLayout>
 
     <ImageView
@@ -31,15 +33,24 @@
         android:layout_height="@dimen/fenge_height"
         android:src="@mipmap/fengexianbig"
         android:scaleType="fitXY"/>
-
-    <ListView
-        android:id="@+id/record_list"
+    <LinearLayout
         android:layout_below="@+id/r_L1"
-        android:layout_marginTop="62dp"
+        android:layout_marginTop="65px"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#ffffff">
 
-    </ListView>
+        <ListView
+            android:id="@+id/record_list"
+            android:layout_below="@+id/r_L1"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </ListView>
+    </LinearLayout>
+
     <include
         layout="@layout/advertise">
 
