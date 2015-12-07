@@ -36,17 +36,24 @@
             android:src="@mipmap/fengexianbig"
             android:scaleType="fitXY" />
 
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="79dp"
-            android:layout_alignParentTop="true"
-            android:text="请长按设备正面按钮进行连接"
-            android:textSize="32px"
-            android:textColor="#000000"
-            android:gravity="center"
-            android:id="@+id/textView3"
-            android:background="#ffffff"
-            />
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:layout_alignParentTop="true"
+                android:text="请长按设备正面按钮进行连接"
+                android:textSize="32px"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:id="@+id/textView3"
+                android:background="#ffffff"
+                />
+        </RelativeLayout>
+
     </LinearLayout>
 
     <include
