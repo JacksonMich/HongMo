@@ -13,7 +13,7 @@ import android.widget.TextView;
  */
 public class PersonalInfoActivity extends Activity implements View.OnClickListener{
 
-    private TextView userNameText,userSexText,userIDText,userAgeText;
+    private TextView userNameText,userSexText,userIDText,userAgeText,userAddressText;
     private Button quitAccount;
     SharedInfo sharedInfo;
     private NotifiableViewFlipper viewFlipper;
@@ -43,6 +43,7 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
         userSexText = (TextView)findViewById(R.id.sex);
         userIDText = (TextView)findViewById(R.id.userID);
         userAgeText = (TextView)findViewById(R.id.userAge);
+        userAddressText = (TextView)findViewById(R.id.suozaidi);
 
         quitAccount = (Button)findViewById(R.id.quitAccount);
         quitAccount.setOnClickListener(this);
@@ -56,6 +57,8 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
         userNameText.setText(sharedInfo.getInfo()[0]);
         userSexText.setText(sharedInfo.getInfo()[1]);
         userIDText.setText(sharedInfo.getInfo()[2]);
+        userAgeText.setText(sharedInfo.getInfo()[3]);
+        userAddressText.setText(sharedInfo.getInfo()[4]);
 
     }
 //    private void saveInfo(){
