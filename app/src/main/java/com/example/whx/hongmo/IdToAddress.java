@@ -2,28 +2,31 @@ package com.example.whx.hongmo;
 
 
 
+import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
 import android.util.Log;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
 
 public class IdToAddress {
 
     protected final String DATABASE_PATH = Environment
-            .getExternalStorageDirectory().getAbsolutePath()+ "/fuck";
+            .getExternalStorageDirectory().getAbsolutePath()+ "/HongMo";
     protected final String DATABASE_FILENAME = "idtoad.db";
     private SQLiteDatabase database;
-
+    private Context mContext;
     private String id;
 
-    public void IdtoAddress() {
+    public IdToAddress(Context context) {
 //        super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
 
 //        TextView text = (TextView)findViewById(R.id.text);
-
+        this.mContext = context;
         String databaseFilename = DATABASE_PATH + "/" + DATABASE_FILENAME;
         File dir = new File(DATABASE_PATH);
         if (!dir.exists()){
@@ -36,10 +39,20 @@ public class IdToAddress {
             if (!file.exists()) {
 
                 file.createNewFile();
+                InputStream is = mContext.getResources().openRawResource(R.raw.filesidtoaddress);
+                FileOutputStream fos = new FileOutputStream(databaseFilename);
+                byte[] buffer = new byte[is.available()];
+                is.read(buffer);
+                fos.write(buffer);
+
+                is.close();
+                fos.close();
             }
         }catch (Exception e){
             Log.i("------------", e.getMessage());
         }
+
+
 
         database = SQLiteDatabase.openOrCreateDatabase(
                 databaseFilename, null);

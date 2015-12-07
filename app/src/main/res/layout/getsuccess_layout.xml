@@ -38,7 +38,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="false"
             android:textSize="32px"
-            android:layout_marginRight="75px"
+            android:layout_marginRight="35px"
             android:textColor="#ff3000"
             android:textStyle="bold" />
 
@@ -72,7 +72,7 @@
         android:layout_below="@+id/p_R1"
         android:layout_width="match_parent"
         android:layout_height="65px"
-        android:src="@mipmap/fengexian"
+        android:src="@mipmap/fengexianbig"
         android:scaleType="fitXY"/>
 
 

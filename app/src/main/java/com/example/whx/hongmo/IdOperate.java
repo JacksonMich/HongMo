@@ -35,7 +35,7 @@ public class IdOperate {
     }
 
     public String getSexStr(String id){
-        String sexBit = id.substring(17,18);
+        char sexBit = id.charAt(16);
 
         int temp = (Integer.valueOf(sexBit).intValue())%2;
         switch(temp){
