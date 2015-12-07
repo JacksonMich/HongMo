@@ -14,7 +14,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="821px">
+            android:layout_height="821px"
+            android:background="#ffffff">
 
             <ImageView
                 android:layout_width="316px"
@@ -32,7 +33,7 @@
             android:layout_width="fill_parent"
             android:layout_height="65px"
             android:id="@+id/imageView3"
-            android:src="@drawable/fengexian"
+            android:src="@mipmap/fengexianbig"
             android:scaleType="fitXY" />
 
         <RelativeLayout

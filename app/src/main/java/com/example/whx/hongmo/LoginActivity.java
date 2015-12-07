@@ -42,9 +42,9 @@ public class LoginActivity extends Activity implements View.OnClickListener{
     private boolean loginSuccess(){
         String ID = userID.getText().toString();
         String name = userName.getText().toString();
-        String sex = "";
-        String age = "";
-        String address = new IdToAddress().getAddress(new IdOperate().getAddressStr(ID));
+        String sex = new IdOperate().getSexStr(ID);
+        String age = new IdOperate().getBirthStr(ID);
+        String address = new IdToAddress(this).getAddress(new IdOperate().getAddressStr(ID));
 //        String sex = userSex.getText().toString();
 
         SharedInfo sharedInfo = new SharedInfo(this);
