@@ -81,6 +81,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/p_collection"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:textColor="#ff0000"
@@ -102,6 +103,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/p_renzheng"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:textColor="#ff0000"
@@ -123,6 +125,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/p_wait"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/yanzhengjindu_size"
@@ -143,12 +146,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/p_success"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/yanzhengjindu_size"
                 android:text="领取成功"/>
             <TextView
-                android:id="@+id/p_time"
+                android:id="@+id/p_success_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#a5a5a5"
