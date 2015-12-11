@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.TextView;
 
 /**
  * Created by ZhuTalan on 2015/11/11.
@@ -11,6 +13,9 @@ import android.widget.Button;
 public class GetSuccessActivity extends Activity implements View.OnClickListener{
     private NotifiableViewFlipper viewFlipper;
     private Button confirm;
+    SharedInfo sharedInfo;
+    private TextView name;
+    private ListView recordList;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,8 +24,31 @@ public class GetSuccessActivity extends Activity implements View.OnClickListener
         CustomActionBar actionBar = new CustomActionBar(this);
         actionBar.setActionBarLayout(R.layout.actionbar);
         actionBar.setTitle("领取状态");
+        initContent();
+        setPersonalInfo();
+        recordList = (ListView)findViewById(R.id.record_list);
+        setData();
     }
-    
+    private void setData(){
+        String[] titles = {"2015年11月","2015年10月","2015年9月"};
+        String[] subtitles = {"11月10日 10:25","10月10日 10:25","9月10日 10:25"};
+        String[] lingquzhuangtai = {"成功","成功","成功","成功"};
+        String[] lingqujine = {"1200元","200元","200元"};
+
+        RecordListAdapter adapter = new RecordListAdapter(this);
+        adapter.setSource(titles, subtitles, lingquzhuangtai, lingqujine);
+
+        recordList.setAdapter(adapter);
+    }
+
+    private void initContent(){
+        name=(TextView)findViewById(R.id.textView6);
+    }
+    private void setPersonalInfo(){
+        SharedInfo sharedInfo = new SharedInfo(this);
+        name.setText(sharedInfo.getInfo()[0]);
+
+    }
 
     private void setAdView(){
 

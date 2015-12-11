@@ -65,7 +65,7 @@ public class IdToAddress {
 
         try {
             while (cursor.moveToNext()) {
-                Log.i("-----------", new String(cursor.getBlob(1), "gbk"));
+                //Log.i("-----------", new String(cursor.getBlob(1), "gbk"));
                 result = new String(cursor.getBlob(1), "gbk");
 
                 return result;
@@ -74,6 +74,6 @@ public class IdToAddress {
                 return e.getMessage();
         }
 
-        return null;
+        return "请检查身份证号是否正确";
     }
 }

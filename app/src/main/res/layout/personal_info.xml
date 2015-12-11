@@ -198,7 +198,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="20dp"
                     android:textSize="@dimen/text_size"
-                    android:text="请检查身份证号是否正确" />
+                     />
             </LinearLayout>
 
             <ImageView
