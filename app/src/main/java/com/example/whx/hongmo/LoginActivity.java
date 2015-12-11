@@ -66,10 +66,14 @@ public class LoginActivity extends Activity implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
+        loginBtn.setFocusable(true);
+        loginBtn.setFocusableInTouchMode(true);
+        loginBtn.requestFocus();
+        loginBtn.requestFocusFromTouch();
         ID = userID.getText().toString();
         if (ID.length() != 18 && ID.length() != 15) {
             Toast.makeText(LoginActivity.this, "身份证号只能为15或18位", Toast.LENGTH_SHORT).show();
-        }else{
+        }else if(flag1){
             if(loginSuccess(ID,name)){
                 Intent intent = new Intent();
                 intent.setClass(this,MainActivity.class);
@@ -77,6 +81,8 @@ public class LoginActivity extends Activity implements View.OnClickListener{
                 startActivity(intent);
                 finish();
             }
+        }else{
+            Toast.makeText(LoginActivity.this, "姓名只能为汉字", Toast.LENGTH_SHORT).show();
         }
 
     }

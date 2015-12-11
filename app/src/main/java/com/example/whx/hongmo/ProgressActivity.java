@@ -1,6 +1,7 @@
 package com.example.whx.hongmo;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -45,10 +46,10 @@ public class ProgressActivity extends Activity {
         TextView success = (TextView)findViewById(R.id.p_success);
         TextView success_time = (TextView)findViewById(R.id.p_success_time);
 
-        wait.setTextColor(0xa5a5a5);
+        wait.setTextColor(Color.parseColor("#a5a5a5"));
         wait_time.setVisibility(View.INVISIBLE);
 
-        success.setTextColor(0xa5a5a5);
+        success.setTextColor(Color.parseColor("#a5a5a5"));
         success_time.setVisibility(View.INVISIBLE);
 
     }
