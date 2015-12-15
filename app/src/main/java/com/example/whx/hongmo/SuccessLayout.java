@@ -21,7 +21,7 @@ public class SuccessLayout extends Activity implements View.OnClickListener{
 
         CustomActionBar actionBar = new CustomActionBar(this);
         actionBar.setActionBarLayout(R.layout.actionbar);
-        actionBar.setTitle("认证状态");
+        actionBar.setTitle("采集状态");
 
         sharedInfo = new SharedInfo(this);
 

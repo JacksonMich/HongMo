@@ -1,6 +1,7 @@
 package com.example.whx.hongmo;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     private int counterForJustFuckingFun=0;
     private RelativeLayout relativeLayout;
     private Button startRenzhengBtn;
+    private Context test;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +54,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
         process = (LinearLayout)findViewById(R.id.process);
         process.setOnClickListener(this);
+
+
     }
 
     private void setAdView(){
@@ -90,6 +94,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         switch (v.getId()){
 
             case R.id.startRenzheng:
+                //Log.i("--=------=-=-=-=", test.getResources().getDisplayMetrics().density + "");
                 Intent intent2 = new Intent();
                 intent2.setClass(this,CameraActivity.class);
                 startActivity(intent2);
@@ -116,8 +121,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
             case R.id.process:
                 counterForJustFuckingFun++;
                 if(counterForJustFuckingFun%2==0){
-                Intent intent4 = new Intent();
-                intent4.setClass(this,ProgressActivity.class);
+                    Intent intent4 = new Intent();
+                    intent4.setClass(this,ProgressActivity.class);
                 startActivity(intent4);
                 break;
                 }

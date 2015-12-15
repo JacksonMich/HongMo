@@ -59,6 +59,7 @@ public class IdToAddress {
 //        Cursor cursor = database.rawQuery("select * from idad where id="+"123456",null);
 
     }
+
     public String getAddress(String id){
         Cursor cursor = database.rawQuery("select * from idad where id="+id,null);
         String result;
