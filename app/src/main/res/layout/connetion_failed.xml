@@ -42,9 +42,10 @@
             android:layout_gravity="center_horizontal">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="79dp"
-                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100px"
+                android:layout_centerHorizontal="true"
                 android:text="请长按设备正面按钮进行连接"
                 android:textSize="32px"
                 android:textColor="#000000"
