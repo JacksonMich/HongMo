@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -34,6 +35,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
         initContent();
 
         registerRec();
+
+        Log.i("--=------=-=-=-=", this.getResources().getDisplayMetrics().density + "");
     }
 
     private void initContent(){
@@ -94,7 +97,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         switch (v.getId()){
 
             case R.id.startRenzheng:
-                //Log.i("--=------=-=-=-=", test.getResources().getDisplayMetrics().density + "");
+
                 Intent intent2 = new Intent();
                 intent2.setClass(this,CameraActivity.class);
                 startActivity(intent2);
