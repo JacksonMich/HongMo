@@ -35,6 +35,7 @@
         android:layout_below="@+id/m_R1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="65px"
+        android:background="#ffffff"
         >
 
         <TextView

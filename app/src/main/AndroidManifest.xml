@@ -43,10 +43,7 @@
             android:name=".LaunchActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+
         </activity>
         <activity android:name=".MainActivity" >
             <activity
@@ -59,6 +56,17 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:label="@string/title_activity_advertise_launch" >
 
+        </activity>
+        <activity android:name=".GuideActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+        <activity android:name=".WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 
