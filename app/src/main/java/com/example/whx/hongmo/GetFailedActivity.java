@@ -24,32 +24,20 @@ public class GetFailedActivity extends Activity implements View.OnClickListener{
         CustomActionBar actionBar = new CustomActionBar(this);
         actionBar.setActionBarLayout(R.layout.actionbar);
         actionBar.setTitle("领取状态");
-        initContent();
-        setPersonalInfo();
         recordList = (ListView)findViewById(R.id.record_list);
         setData();
     }
-    private void setData(){
-        String[] titles = {"2015年11月","2015年10月","2015年9月"};
-        String[] subtitles = {"11月10日 10:25","10月10日 10:25","9月10日 10:25"};
-        String[] lingquzhuangtai = {"领取失败","成功","成功","成功"};
-        String[] lingqujine = {"身份信息有误","200元","200元"};
+    private void setData() {
+        String[] titles = {"2015年11月", "2015年10月", "2015年9月"};
+        String[] subtitles = {"11月10日 10:25", "10月10日 10:25", "9月10日 10:25"};
+        String[] lingquzhuangtai = {"领取失败", "成功", "成功", "成功"};
+        String[] lingqujine = {"身份信息有误", "200元", "200元"};
 
         RecordListAdapter adapter = new RecordListAdapter(this);
         adapter.setSource(titles, subtitles, lingquzhuangtai, lingqujine);
 
         recordList.setAdapter(adapter);
     }
-
-    private void initContent(){
-        name=(TextView)findViewById(R.id.textView6);
-    }
-    private void setPersonalInfo(){
-        SharedInfo sharedInfo = new SharedInfo(this);
-        name.setText(sharedInfo.getInfo()[0]);
-
-    }
-
     private void setAdView(){
 
         int[] images = {R.mipmap.guanggaotu,R.mipmap.guanggaotu};
