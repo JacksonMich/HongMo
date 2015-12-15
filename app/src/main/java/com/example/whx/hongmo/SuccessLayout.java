@@ -42,8 +42,8 @@ public class SuccessLayout extends Activity implements View.OnClickListener{
         SharedInfo sharedInfo = new SharedInfo(this);
         name.setText(sharedInfo.getInfo()[0]);
         sex.setText(sharedInfo.getInfo()[1]);
-        age.setText(sharedInfo.getInfo()[2]);
-        pID.setText(sharedInfo.getInfo()[3]);
+        age.setText(sharedInfo.getInfo()[3]);
+        pID.setText(sharedInfo.getInfo()[2]);
         place.setText(sharedInfo.getInfo()[4]);
 
     }

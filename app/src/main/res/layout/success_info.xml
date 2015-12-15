@@ -11,34 +11,31 @@
 
         <ImageView
             android:id="@+id/zhuangtai"
-            android:layout_width="214px"
-            android:layout_height="226px"
+            android:layout_width="107dp"
+            android:layout_height="113dp"
             android:src="@mipmap/renzheng1"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="36px" />
+            android:layout_marginTop="15dp" />
 
         <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="60px"
+            android:layout_height="25dp"
             android:layout_below="@+id/zhuangtai"
             android:background="#32a0a0a0"
-            android:layout_marginTop="50px">
+            android:layout_marginTop="30dp">
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
+                android:layout_height="wrap_content"
                 android:text="采集成功，本月养老金将在5个工作日发送到您的帐户"
-                android:textSize="27px"
+                android:textSize="13.5sp"
                 android:textIsSelectable="true"
                 android:textColor="#a0a0a0"
                 android:singleLine="false"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="false"
-                android:layout_marginRight="64px"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="15px" />
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
         </RelativeLayout>
 
     </RelativeLayout>
@@ -58,7 +55,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="40px">
+            android:layout_marginLeft="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -73,7 +70,7 @@
                     android:layout_gravity="center_vertical"
                     android:text="姓       名"
                     android:textScaleX="1"
-                    android:textSize="30px"
+                    android:textSize="15sp"
                     android:textColor="#a0a0a0" />
                 <TextView
                     android:id="@+id/sex"
@@ -98,7 +95,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="40px">
+            android:layout_marginLeft="20dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="性       别"
-                    android:textSize="30px"
+                    android:textSize="15sp"
                     android:textColor="#a0a0a0" />
                 <TextView
                     android:id="@+id/userAge"
@@ -120,11 +117,11 @@
                     android:text="男"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="20dp"
-                    />
+                    android:textSize="15sp" />
             </LinearLayout>
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="1px"
+                android:layout_height="0.5dp"
                 android:layout_marginTop="5dp"
                 android:src="@mipmap/fengexian1"
                 android:scaleType="fitXY"/>
@@ -137,7 +134,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="40px">
+            android:layout_marginLeft="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -150,7 +147,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="年       龄"
-                    android:textSize="30px"
+                    android:textSize="15sp"
                     android:textColor="#a0a0a0" />
                 <TextView
                     android:id="@+id/userID"
@@ -159,7 +156,8 @@
                     android:background="@null"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="20dp"
-                    android:text="18" />
+                    android:text="18"
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <ImageView
@@ -178,7 +176,7 @@
             android:layout_below="@+id/p_l3"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginLeft="40px">
+            android:layout_marginLeft="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -191,7 +189,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="身份证号"
-                    android:textSize="30px"
+                    android:textSize="15sp"
                     android:textColor="#a0a0a0" />
 
                 <TextView
@@ -201,7 +199,8 @@
                     android:background="@null"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="20dp"
-                    android:text="12345678" />
+                    android:text="12345678"
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <ImageView
@@ -220,7 +219,7 @@
             android:layout_below="@+id/p_l3"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginLeft="40px">
+            android:layout_marginLeft="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -233,7 +232,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:text="所  在  地"
-                    android:textSize="30px"
+                    android:textSize="15sp"
                     android:textColor="#a0a0a0" />
 
                 <TextView
@@ -243,7 +242,8 @@
                     android:background="@null"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="20dp"
-                    android:text="香港九龙" />
+                    android:text="香港九龙"
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <ImageView
@@ -257,13 +257,13 @@
         <Button
             android:id="@+id/quitAccount"
             android:layout_below="@+id/p_l3"
-            android:layout_width="250px"
-            android:layout_height="79px"
-            android:layout_marginTop="43px"
+            android:layout_width="125dp"
+            android:layout_height="39.5dp"
+            android:layout_marginTop="21.5dp"
             android:background="@mipmap/anniu_queren"
             android:textSize="@dimen/font_size_12"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="255px" />
+            android:layout_marginLeft="127.5dp" />
     </LinearLayout>
 
 

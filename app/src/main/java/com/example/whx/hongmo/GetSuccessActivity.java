@@ -24,8 +24,6 @@ public class GetSuccessActivity extends Activity implements View.OnClickListener
         CustomActionBar actionBar = new CustomActionBar(this);
         actionBar.setActionBarLayout(R.layout.actionbar);
         actionBar.setTitle("领取状态");
-        initContent();
-        setPersonalInfo();
         recordList = (ListView)findViewById(R.id.record_list);
         setData();
     }
@@ -41,14 +39,6 @@ public class GetSuccessActivity extends Activity implements View.OnClickListener
         recordList.setAdapter(adapter);
     }
 
-    private void initContent(){
-        name=(TextView)findViewById(R.id.textView6);
-    }
-    private void setPersonalInfo(){
-        SharedInfo sharedInfo = new SharedInfo(this);
-        name.setText(sharedInfo.getInfo()[0]);
-
-    }
 
     private void setAdView(){
 
