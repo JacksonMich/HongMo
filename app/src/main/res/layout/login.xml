@@ -7,6 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none"
+        android:background="#ffffff"
         >
 
         <RelativeLayout
@@ -21,8 +22,8 @@
                 android:background="#ffffff">
 
                 <ImageView
-                    android:layout_width="370px"
-                    android:layout_height="210px"
+                    android:layout_width="185dp"
+                    android:layout_height="105dp"
                     android:layout_centerInParent="true"
                     android:src="@mipmap/logo"
                     />
@@ -35,9 +36,9 @@
                 android:scaleType="fitXY"/>
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_below="@+id/l_R1"
-                android:layout_marginTop="65px"
+                android:layout_marginTop="33dp"
                 android:background="#ffffff">
                 <LinearLayout
                     android:id="@+id/l_l1"

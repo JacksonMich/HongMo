@@ -8,9 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class LoginActivity extends Activity implements View.OnClickListener{
+public class AnotherLoginActivity extends Activity implements View.OnClickListener{
 
-//    private NotifiableViewFlipper viewFlipper;
+    //    private NotifiableViewFlipper viewFlipper;
     private Button loginBtn;
     private EditText userID,userName;
     private String ID,name;
@@ -21,6 +21,9 @@ public class LoginActivity extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
+        CustomActionBar actionBar = new CustomActionBar(this);
+        actionBar.setActionBarLayout(R.layout.actionbar);
+        actionBar.setTitle("编辑");
 
 //        setAdView();
         loginBtn = (Button)findViewById(R.id.loginBtn);
@@ -51,9 +54,9 @@ public class LoginActivity extends Activity implements View.OnClickListener{
 //                    Pattern p = Pattern.compile("[\u4e00-\u9fa5]");
 //                    Matcher m = p.matcher(name);
                     if (!checkNameChese(name)) {
-                        Toast.makeText(LoginActivity.this, "姓名只能为汉字", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AnotherLoginActivity.this, "姓名只能为汉字", Toast.LENGTH_SHORT).show();
                     } else if(name.equals("")){
-                        Toast.makeText(LoginActivity.this,"请输入完整信息",Toast.LENGTH_LONG).show();
+                        Toast.makeText(AnotherLoginActivity.this,"请输入完整信息",Toast.LENGTH_LONG).show();
 
                     }else {
                         flag1 = true;
@@ -72,7 +75,7 @@ public class LoginActivity extends Activity implements View.OnClickListener{
         loginBtn.requestFocusFromTouch();
         ID = userID.getText().toString();
         if (ID.length() != 18 && ID.length() != 15) {
-            Toast.makeText(LoginActivity.this, "身份证号只能为15或18位", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AnotherLoginActivity.this, "身份证号只能为15或18位", Toast.LENGTH_SHORT).show();
         }else if(flag1){
             if(loginSuccess(ID,name)){
                 Intent intent = new Intent();
@@ -82,7 +85,7 @@ public class LoginActivity extends Activity implements View.OnClickListener{
                 finish();
             }
         }else{
-            Toast.makeText(LoginActivity.this, "姓名只能为汉字", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AnotherLoginActivity.this, "姓名只能为汉字", Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -112,19 +115,9 @@ public class LoginActivity extends Activity implements View.OnClickListener{
     @Override
     public void onBackPressed() {
 
-        exitApp();
+        super.onBackPressed();
     }
-    private long exitTime = 0;
-    private void exitApp() {
-        if ((System.currentTimeMillis() - exitTime) > 2000) {
-            Toast.makeText(getApplicationContext(), "再按一次退出程序",
-                    Toast.LENGTH_SHORT).show();
-            exitTime = System.currentTimeMillis();
-        } else {
-            finish();
-            System.exit(0);
-        }
-    }
+
     private  boolean isChinese(char c) {
         Character.UnicodeBlock ub = Character.UnicodeBlock.of(c);
         if (ub == Character.UnicodeBlock.CJK_UNIFIED_IDEOGRAPHS

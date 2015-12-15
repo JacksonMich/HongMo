@@ -77,17 +77,17 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.quitAccount:
-                quitAccount();
+                //quitAccount();
 
-                Intent intent1 = new Intent();
-                intent1.setAction("com.example.whx.hongmo");
-                sendBroadcast(intent1);
+//                Intent intent1 = new Intent();
+//                intent1.setAction("com.example.whx.hongmo");
+//                sendBroadcast(intent1);
 
                 Intent intent = new Intent();
-                intent.setClass(this,LoginActivity.class);
+                intent.setClass(this, AnotherLoginActivity.class);
                 startActivity(intent);
 
-                finish();
+                //finish();
 
                 break;
 

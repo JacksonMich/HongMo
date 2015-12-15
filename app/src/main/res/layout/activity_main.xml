@@ -7,12 +7,12 @@
     <RelativeLayout
         android:id="@+id/m_R1"
         android:layout_width="match_parent"
-        android:layout_height="633px"
+        android:layout_height="316dp"
         android:background="#ffffff">
 
         <Button
-            android:layout_width="538px"
-            android:layout_height="549px"
+            android:layout_width="269dp"
+            android:layout_height="274dp"
             android:id="@+id/startRenzheng"
             android:text="现在认证"
             android:textSize="@dimen/font_size_12"
@@ -31,10 +31,10 @@
     <RelativeLayout
         android:id="@+id/m_linear1"
         android:layout_width="match_parent"
-        android:layout_height="484px"
+        android:layout_height="242dp"
         android:layout_below="@+id/m_R1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="65px"
+        android:layout_marginTop="@dimen/fenge_height"
         android:background="#ffffff"
         >
 
@@ -53,7 +53,7 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="210px"
+            android:layout_height="105dp"
             android:orientation="vertical"
             android:layout_alignParentLeft="true"
             android:layout_toLeftOf="@+id/m_line_h"
@@ -75,7 +75,7 @@
         <LinearLayout
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
-            android:layout_height="210px"
+            android:layout_height="105dp"
             android:layout_toRightOf="@+id/m_line_h"
             android:id="@+id/process"
             android:background="#ffffff"
@@ -98,7 +98,7 @@
         <LinearLayout
             android:layout_below="@+id/m_line_v"
             android:layout_width="wrap_content"
-            android:layout_height="200px"
+            android:layout_height="100dp"
             android:layout_toLeftOf="@+id/m_line_h"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
@@ -124,7 +124,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:layout_width="wrap_content"
-            android:layout_height="200px"
+            android:layout_height="100dp"
             android:layout_toRightOf="@+id/m_line_h"
             android:id="@+id/connectDevice"
             android:textSize="@dimen/text_size"
@@ -147,12 +147,6 @@
 
     </RelativeLayout>
 
-    <ImageView
-        android:layout_below="@+id/m_linear1"
-        android:layout_width="match_parent"
-        android:layout_height="10px"
-        android:src="@mipmap/fengexian"
-        android:scaleType="fitXY"/>
     <include
         layout="@layout/advertise"/>
 
