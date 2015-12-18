@@ -14,24 +14,23 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="821px"
+            android:layout_height="410dp"
             android:background="#ffffff">
 
             <ImageView
-                android:layout_width="316px"
-                android:layout_height="821px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/imageView2"
-                android:src="@drawable/chatou2"
+                android:src="@mipmap/lianjie1"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginLeft="202px"
-                android:layout_marginTop="100px"
-                android:layout_marginBottom="100px" />
+                android:layout_marginTop="50dp"
+                 />
         </RelativeLayout>
 
         <ImageView
             android:layout_width="fill_parent"
-            android:layout_height="65px"
+            android:layout_height="33dp"
             android:id="@+id/imageView3"
             android:src="@mipmap/fengexianbig"
             android:scaleType="fitXY" />
@@ -45,9 +44,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="100px"
+                android:layout_marginTop="50dp"
                 android:text="设备连接正常"
-                android:textSize="32px"
+                android:textSize="16sp"
                 android:textColor="#000000"
                 android:gravity="center"
                 android:id="@+id/textView3"

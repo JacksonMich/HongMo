@@ -21,6 +21,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/touxiang1"
+                android:layout_gravity="center_horizontal"
                 />
             <TextView
                 android:id="@+id/userName"
@@ -216,7 +217,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@mipmap/anniu"
-            android:text="编辑"
+            android:text="编    辑"
             android:textSize="@dimen/font_size_12"
             android:layout_centerHorizontal="true"
             android:textColor="#ffffff"/>

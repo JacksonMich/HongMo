@@ -81,7 +81,7 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
     public void onPageSelected(int position) {
 
         if(position==2){
-            mHandler.sendEmptyMessageDelayed(GOTO_LOGIN_ACTIVITY, 2000);
+            mHandler.sendEmptyMessageDelayed(GOTO_LOGIN_ACTIVITY, 1000);
         }
 
     }

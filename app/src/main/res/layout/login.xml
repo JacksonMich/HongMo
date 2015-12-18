@@ -131,7 +131,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
                     android:background="@mipmap/anniu"
-                    android:text="@string/queren"
+                    android:text="确    认"
                     android:textSize="@dimen/font_size_12"
                     android:textColor="#ffffff"
                     android:layout_centerHorizontal="true"
