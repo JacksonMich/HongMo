@@ -8,5 +8,5 @@
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:id="@+id/welcomeImageView"
-        android:src="@drawable/qidongye_all"/>
+        android:src="@mipmap/qidongye_all"/>
 </LinearLayout>

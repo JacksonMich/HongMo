@@ -127,10 +127,10 @@
                 <Button
                     android:id="@+id/loginBtn"
                     android:layout_below="@+id/l_l3"
-                    android:layout_width="125dp"
-                    android:layout_height="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
-                    android:background="@mipmap/logo1"
+                    android:background="@mipmap/anniu"
                     android:text="@string/queren"
                     android:textSize="@dimen/font_size_12"
                     android:textColor="#ffffff"
