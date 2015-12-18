@@ -18,8 +18,8 @@
 
             <ImageView
                 android:id="@+id/zhuangtai"
-                android:layout_width="134dp"
-                android:layout_height="137dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:src="@mipmap/touxiang1"
                 />
             <TextView
@@ -28,7 +28,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="64px"
+                android:textSize="30sp"
                 android:text="吴德江"/>
         </LinearLayout>
 
@@ -36,14 +36,14 @@
     <ImageView
         android:layout_below="@+id/p_R1"
         android:layout_width="match_parent"
-        android:layout_height="65px"
+        android:layout_height="33dp"
         android:src="@mipmap/fengexianbig"
         android:scaleType="fitXY"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/p_R1"
-        android:layout_marginTop="65px"
+        android:layout_marginTop="33dp"
         android:background="#ffffff">
         <LinearLayout
             android:id="@+id/p_l1"
@@ -79,7 +79,7 @@
                     />
             </LinearLayout>
             <ImageView
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:src="@mipmap/xian"
@@ -120,7 +120,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:src="@mipmap/xian"
                 android:scaleType="fitXY"/>
         </LinearLayout>
@@ -163,7 +163,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:src="@mipmap/xian"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"/>
         </LinearLayout>
 
@@ -205,19 +205,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="1px"
                 android:src="@mipmap/xian"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="15dp"
                 android:scaleType="fitXY"/>
         </LinearLayout>
 
         <Button
             android:id="@+id/quitAccount"
             android:layout_below="@+id/p_l4"
-            android:layout_width="250px"
-            android:layout_height="79px"
-            android:layout_marginTop="60px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
             android:background="@mipmap/anniu"
+            android:text="编辑"
             android:textSize="@dimen/font_size_12"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"/>
     </RelativeLayout>
 
 

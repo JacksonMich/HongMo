@@ -24,7 +24,7 @@
             android:layout_marginTop="10dp"
             android:layout_gravity="center_horizontal"
             android:text="吴德江"
-            android:textSize="60px"/>
+            android:textSize="30sp"/>
     </LinearLayout>
 
     <ImageView
@@ -35,7 +35,7 @@
         android:scaleType="fitXY"/>
     <LinearLayout
         android:layout_below="@+id/r_L1"
-        android:layout_marginTop="65px"
+        android:layout_marginTop="33dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ffffff">
