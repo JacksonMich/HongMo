@@ -18,50 +18,68 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:name=".LoginActivity"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateVisible">
         </activity>
-        <activity android:name=".CameraActivity" >
+        <activity android:name=".CameraActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".SuccessLayout" >
+        <activity android:name=".SuccessLayout"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ConnectionFailActivity" >
+        <activity android:name=".ConnectionFailActivity"
+            android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".PersonalInfoActivity" >
+        <activity android:name=".PersonalInfoActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ConnectionActivity" >
+        <activity android:name=".ConnectionActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".ProgressActivity" >
+        <activity android:name=".ProgressActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".GetSuccessActivity" >
+        <activity android:name=".GetSuccessActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".GetFailedActivity" >
+        <activity android:name=".GetFailedActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".RecordActivity" >
+        <activity android:name=".RecordActivity"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".LaunchActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait"
+            >
+
 
 
         </activity>
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <activity
                 android:name=".Advertise"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+                android:screenOrientation="portrait">
             </activity>
         </activity>
         <activity
             android:name=".AdvertiseLaunch"
             android:theme="@style/Theme.AppCompat.NoActionBar"
-            android:label="@string/title_activity_advertise_launch" >
+            android:label="@string/title_activity_advertise_launch"
+            android:screenOrientation="portrait">
 
         </activity>
         <activity android:name=".GuideActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait">
 
         </activity>
         <activity android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

@@ -11,19 +11,20 @@
 
         <ImageView
             android:id="@+id/zhuangtai"
-            android:layout_width="107dp"
-            android:layout_height="113dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@mipmap/renzheng1"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="123.3dp" />
 
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="25dp"
             android:layout_below="@+id/zhuangtai"
             android:background="#32a0a0a0"
-            android:layout_marginTop="30dp">
+            android:layout_marginTop="21dp">
 
             <TextView
                 android:id="@+id/textView5"
@@ -46,7 +47,8 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/p_R1"
         android:layout_alignLeft="@+id/quitAccount"
-        android:layout_alignStart="@+id/quitAccount">
+        android:layout_alignStart="@+id/quitAccount"
+        android:layout_marginTop="30dp">
 
         <LinearLayout
             android:id="@+id/p_l1"
@@ -55,14 +57,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="20dp">
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="40px"
-                android:layout_marginBottom="23px">
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:layout_width="80dp"
@@ -81,10 +83,10 @@
                     android:layout_marginLeft="20dp" />
             </LinearLayout>
             <ImageView
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:src="@mipmap/fengexian1"
+                android:src="@mipmap/xian"
                 android:scaleType="fitXY"/>
         </LinearLayout>
 
@@ -95,12 +97,12 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="20dp">
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="33px"
-                android:layout_marginBottom="23px">
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:layout_width="80dp"
@@ -121,9 +123,9 @@
             </LinearLayout>
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_marginTop="5dp"
-                android:src="@mipmap/fengexian1"
+                android:layout_height="1px"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/xian"
                 android:scaleType="fitXY"/>
         </LinearLayout>
 
@@ -134,13 +136,13 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="20dp">
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="33px"
-                android:layout_marginBottom="23px">
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:layout_width="80dp"
@@ -163,8 +165,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:src="@mipmap/fengexian1"
-                android:layout_marginTop="5dp"
+                android:src="@mipmap/xian"
+                android:layout_marginTop="20dp"
                 android:scaleType="fitXY"/>
         </LinearLayout>
 
@@ -176,13 +178,13 @@
             android:layout_below="@+id/p_l3"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginLeft="20dp">
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="33px"
-                android:layout_marginBottom="23px">
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:layout_width="80dp"
@@ -206,9 +208,9 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:src="@mipmap/fengexian1"
-                android:layout_marginTop="5dp"
-                android:scaleType="fitXY" />
+                android:src="@mipmap/xian"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -219,13 +221,14 @@
             android:layout_below="@+id/p_l3"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginLeft="20dp">
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="33px"
-                android:layout_marginBottom="23px">
+                android:layout_marginTop="20dp"
+                >
 
                 <TextView
                     android:layout_width="80dp"
@@ -249,8 +252,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="1px"
-                android:src="@mipmap/fengexian1"
-                android:layout_marginTop="5dp"
+                android:src="@mipmap/xian"
+                android:layout_marginTop="20dp"
                 android:scaleType="fitXY" />
         </LinearLayout>
 

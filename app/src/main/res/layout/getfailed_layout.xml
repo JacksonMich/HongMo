@@ -17,30 +17,33 @@
             android:src="@mipmap/tuan2"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="-20dp" />
+            android:layout_marginTop="-20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ImageView
-            android:layout_width="192px"
-            android:layout_height="188px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/imageView9"
             android:src="@mipmap/touxiang1"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="95px" />
+            android:layout_marginTop="47dp"
+            android:layout_marginLeft="133dp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/imageView9"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_alignBottom="@+id/textView7">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true">
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_centerHorizontal="true">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -48,26 +51,26 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="您11月的养老金领取失败！"
                     android:id="@+id/textView"
-                    android:textSize="32px"
-                    android:textColor="#a0a0a0"
+                    android:textSize="20sp"
+                    android:textColor="#8c8c8c"
                     android:textStyle="bold"
                     android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true" />
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp" />
             </RelativeLayout>
-
         </RelativeLayout>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="身份信息有误"
             android:id="@+id/textView7"
-            android:textSize="24px"
+            android:textSize="18dp"
             android:textColor="#ff3000"
-            android:layout_below="@+id/textView"
+            android:layout_above="@+id/relativeLayout2"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="190sp" />
+            android:layout_marginTop="195sp"
+            android:layout_marginBottom="21dp" />
 
     </RelativeLayout>
 
