@@ -2,11 +2,12 @@ package com.example.whx.hongmo;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.os.Handler;
 import android.os.Handler.Callback;
+import android.view.View;
+import android.widget.Button;
 
 /**
  * Created by ZhuTalan on 2015/11/11.
@@ -21,8 +22,8 @@ public class CameraActivity extends Activity implements View.OnClickListener{
 
         CustomActionBar actionBar = new CustomActionBar(this);
         actionBar.setActionBarLayout(R.layout.actionbar);
-        actionBar.setTitle("图像显示");
-
+        actionBar.setTitle("采集状态");
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         timer.sendEmptyMessageDelayed(1,2000);
     }
 

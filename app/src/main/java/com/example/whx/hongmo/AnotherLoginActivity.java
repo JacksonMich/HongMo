@@ -2,11 +2,12 @@ package com.example.whx.hongmo;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class AnotherLoginActivity extends Activity implements View.OnClickListener{
 
@@ -20,47 +21,54 @@ public class AnotherLoginActivity extends Activity implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-
-        CustomActionBar actionBar = new CustomActionBar(this);
-        actionBar.setActionBarLayout(R.layout.actionbar);
-        actionBar.setTitle("编辑");
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 //        setAdView();
         loginBtn = (Button)findViewById(R.id.loginBtn);
         loginBtn.setOnClickListener(this);
 
         userID = (EditText)findViewById(R.id.userIdText);
-//        userID.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-//            @Override
-//            public void onFocusChange(View v, boolean hasFocus) {
-//                if(userID.hasFocus()==false){
-//                    ID = userID.getText().toString();
-//                    if (ID.length() != 18 || ID.length() != 15) {
-//                        Toast.makeText(LoginActivity.this, "身份证号只能为15或18位", Toast.LENGTH_SHORT).show();
-//                    } else {
-//                        flag2 = true;
-//                    }
-//                }
-//
-//            }
-//        });
+        userID.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(userID.hasFocus()==true){
+                    ID = userID.getText().toString();
+                    if (ID.equals("身份证号只能为15或18位")) {
+                        userID.setTextColor(Color.BLACK);
+                        userID.setText("");
+
+                    }
+                }
+
+            }
+        });
 
         userName = (EditText)findViewById(R.id.userNameText);
         userName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                if (userName.hasFocus() == false) {
-                    name = userName.getText().toString();
+                name = userName.getText().toString();
+//                if (userName.hasFocus() == false) {
 //                    Pattern p = Pattern.compile("[\u4e00-\u9fa5]");
 //                    Matcher m = p.matcher(name);
-                    if (!checkNameChese(name)) {
-                        Toast.makeText(AnotherLoginActivity.this, "姓名只能为汉字", Toast.LENGTH_SHORT).show();
-                    } else if(name.equals("")){
-                        Toast.makeText(AnotherLoginActivity.this,"请输入完整信息",Toast.LENGTH_LONG).show();
+//                    if (!checkNameChese(name)) {
+//                        userName.setText("姓名只能为汉字");
+//                        userName.setTextColor(Color.RED);
+//                        //Toast.makeText(LoginActivity.this, "姓名只能为汉字", Toast.LENGTH_SHORT).show();
+//                    } else if(name.equals("")){
+//                        Toast.makeText(LoginActivity.this,"请输入完整信息",Toast.LENGTH_LONG).show();
+//
+//                    }else {
+//                        flag1 = true;
+//                    }
+//                }
+                if(userName.hasFocus()){
+                    if(name.equals("姓名只能为汉字")){
+                        userName.setTextColor(Color.BLACK);
+                        userName.setText("");
 
-                    }else {
-                        flag1 = true;
                     }
+
                 }
             }
         });
@@ -74,9 +82,27 @@ public class AnotherLoginActivity extends Activity implements View.OnClickListen
         loginBtn.requestFocus();
         loginBtn.requestFocusFromTouch();
         ID = userID.getText().toString();
-        if (ID.length() != 18 && ID.length() != 15) {
-            Toast.makeText(AnotherLoginActivity.this, "身份证号只能为15或18位", Toast.LENGTH_SHORT).show();
-        }else if(flag1){
+
+        flag1 = ID.length() != 18 && ID.length() != 15;
+        flag2 = !checkNameChese(name) || name.equals("");
+        if (flag1 && flag2) {
+            userID.setText("身份证号只能为15或18位");
+            userID.setTextColor(Color.RED);
+
+            userName.setText("姓名只能为汉字");
+            userName.setTextColor(Color.RED);
+
+            //Toast.makeText(LoginActivity.this, "身份证号只能为15或18位", Toast.LENGTH_SHORT).show();
+        }else if (flag1&&!flag2) {
+            userID.setText("身份证号只能为15或18位");
+            userID.setTextColor(Color.RED);
+
+            //Toast.makeText(LoginActivity.this, "姓名只能为汉字", Toast.LENGTH_SHORT).show();
+        }else if(!flag1&&flag2){
+            userName.setText("姓名只能为汉字");
+            userName.setTextColor(Color.RED);
+
+        }else{
             if(loginSuccess(ID,name)){
                 Intent intent = new Intent();
                 intent.setClass(this,MainActivity.class);
@@ -84,8 +110,6 @@ public class AnotherLoginActivity extends Activity implements View.OnClickListen
                 startActivity(intent);
                 finish();
             }
-        }else{
-            Toast.makeText(AnotherLoginActivity.this, "姓名只能为汉字", Toast.LENGTH_SHORT).show();
         }
 
     }

@@ -2,6 +2,7 @@ package com.example.whx.hongmo;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -18,7 +19,7 @@ public class LaunchActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.launch);
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         isUser = new SharedInfo(this).getIsUser();
         if(isUser){
             mHandler.sendEmptyMessageDelayed(GOTO_MAIN_ACTIVITY, 2000);

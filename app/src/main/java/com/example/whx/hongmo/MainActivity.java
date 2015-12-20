@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -32,7 +33,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
         actionBar.setActionBarLayout(R.layout.actionbar);
         actionBar.setBackVisible(View.INVISIBLE);
         actionBar.setTitle("首页");
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         initContent();
 
         registerRec();

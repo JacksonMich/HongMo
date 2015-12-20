@@ -86,7 +86,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".AnotherLoginActivity">
+        <activity android:name=".AnotherLoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateVisible">
 
         </activity>
     </application>
